@@ -1,0 +1,67 @@
+/*footer_mobile*/
+
+/*community*/
+.community{padding-bottom:20px;}
+.sns_list{padding:20px 0; display: flex; justify-content: center; gap:10px;}
+.sns{width: 50px; height: 50px; border-radius:5px; overflow:hidden;}
+.sns a{display: block; width: 100%; height: 100%;}
+.sns1 a{background:url("../img/bottom.png") no-repeat -5px -165px;}
+.sns2 a{background:url("../img/bottom.png") no-repeat -75px -165px;}
+.sns3 a{background:url("../img/bottom.png") no-repeat -145px -165px;}
+.sns4 a{background:url("../img/bottom.png") no-repeat -215px -165px;}
+.sns5 a{background:url("../img/bottom.png") no-repeat -285px -165px;}
+.community > div{width: 80%; height: 50px; margin:10px auto;  border-radius: 5px;}
+.community > div > a{display: block; width: 100%; height: 100%;}
+.community >.my_nintendo{background: #e60613; }
+.community >.my_nintendo > a{display: flex; align-items: center; justify-content: center;}
+.my_nintendo_bg{width:50%; height: 50%; background:url("../img/my_nintendo_bg.jpg") no-repeat center; background-size: contain;}
+.community >.amiibo{background: url("../img/amibo_bg.jpg") no-repeat center white; background-size: contain; border:1px solid silver;}
+
+/*footer_menu*/
+.footer_menu{border-top:1px solid silver;}
+.footer_nav>li{border-bottom:1px solid silver; height:50px; line-height:50px; font-weight: 500; text-indent: 20px; overflow:hidden; transition: height .3s ease-in;}
+.footer_nav>li>a{display: flex; justify-content:space-between;width: 100%; height: 50px; border-bottom:1px solid silver; position: relative;}
+.footer_nav>li>a>i{position:absolute; top:50%; right:20px; transform:translateY(-50%); font-size:25px; color:silver;}
+.footer_nav>li>a:hover{color:#e60613;}
+.footer_snb{width:100%; background:rgb(246,246,246); line-height:30px; font-weight: 300; padding:20px 10px;}
+.footer_snb a:hover{text-decoration: underline;}
+
+.footer{padding:40px; background: rgb(246,246,246);}
+.footer_text{margin-bottom:20px;}
+.footer_text p{color:gray; font-size:14px; line-height:16px; word-break: keep-all;}
+.footer_text p span{color: #e60613;}
+.footer5 p{font-style: italic; font-weight: 300;}
+
+@media screen and (max-width:350px) {
+    .sns{width: 40px; height: 40px;}
+    .sns1 a{background:url("../img/bottom.png") no-repeat -5px -133px; background-size: 368px;}
+    .sns2 a{background:url("../img/bottom.png") no-repeat -60px -133px; background-size: 368px;}
+    .sns3 a{background:url("../img/bottom.png") no-repeat -115px -133px; background-size: 368px;}
+    .sns4 a{background:url("../img/bottom.png") no-repeat -172px -133px; background-size: 368px;}
+    .sns5 a{background:url("../img/bottom.png") no-repeat -229px -133px; background-size: 368px;}
+}
+
+@media screen and (min-width:1024px){
+    .community, .footer_menu, .footer_list{width: 960px; margin:0 auto;}
+
+    .community{box-sizing: border-box; padding:0 20px; display:flex; justify-content: space-between; align-items: center;}
+    .community > div{width: 30%; margin:0;}
+    
+    .footer_menu{border-top:none; }
+    .footer_nav{display: flex; justify-content: space-between; margin: 0 20px;}
+    .footer_nav i{display:none;}
+    .footer_nav>li{border:none; text-indent: 0;}
+    .footer_nav>li>a{display:block; border:none; color: #e60613;}
+    .footer_snb{width:100%; background:none; padding:0; padding-bottom:20px; font-weight: 300;}
+    .footer_snb>li>a{color:gray; }
+}
+
+@media screen and (min-width:1320px) {
+    .community, .footer_menu, .footer_list{width: 1280px;}
+
+    .community{box-sizing: border-box; padding:0 20px; display:flex; justify-content: space-between; align-items: center;}
+    .community > div{width: 30%; margin:0;}
+
+    .footer_snb{width:100%; background:none; padding:0; padding-bottom:20px; font-weight: 300;}
+    .footer_snb>li>a{color:gray;}
+}

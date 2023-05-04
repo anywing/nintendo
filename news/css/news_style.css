@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+html,body{width: 100%; height: 100%; font-family: 'Noto Sans KR', Arial, sans-serif;}
+section{width: 100%;}
+.off{display: none !important;}
+
+/* tabs */
+#tabs{border-bottom: 1px solid silver; margin-bottom: 45px;}
+#tab_wrap{display: flex; flex-direction: column; align-items: center;}
+#tab_wrap > div{height: 60px;  line-height: 60px;}
+
+.tab_left{font-size: 1.6rem; font-weight: bold; color: #222;}
+
+.tab_right{width: 100%; display: flex; justify-content: center; font-size: 1rem;}
+.tab_right > .tab{width: 18%; text-align: center;}
+.tab_right > .tab > a{display: block; width: 100%; height: 100%; font-weight: 500; color: #333; box-sizing: border-box;}
+.tab_right > .now_tab > a{color:#e60613; border-bottom: 2px solid #e60613;}
+
+/* search */
+#search_bar{width: 100%; padding:0 20px; margin-bottom: 45px; box-sizing: border-box;}
+#search_bar form{ width: 100%;display: flex; justify-content: space-between;}
+
+#search_bar input{width: 80%; height: 40px; padding: 0 15px; box-sizing: border-box; border-radius: 10px;  border:2px solid #e60613;}
+#search_bar input:focus{outline: none;}
+#search_bar button{border: none; height: 40px; background: #e60613; width: 15%; color:white; font-size: 0.9rem; line-height: 40px; border-radius: 10px;}
+
+/* news */
+#news{padding: 0 20px; box-sizing: border-box; margin-bottom: 60px;}
+.news_list > li{width: 100%; box-shadow: 3px 3px 7px rgba(0,0,0,0.2); margin-bottom:40px; border-radius: 15px; overflow: hidden;}
+.news_list > li > a{width: 100%; height: 100%;}
+.news_list > li > a > img{width: 100%; transition: all .3s;}
+.news_list > li > a:hover > img{transform: scale(1.05); opacity:0.6;}
+
+.news_text{padding:20px; font-size: 1rem; color: #333; height: 40%;}
+.news_text h4{color:#e60613; margin-bottom: 10px; font-weight: 300;}
+.news_text .head{line-height: 1.2rem; overflow:hidden; height:2.5rem; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box; margin-bottom: 15px;}
+.news_text p:last-child{color:#777; font-size: 0.9rem;}
+
+#news button{margin:60px auto 0; display:block; width: 30%; height: 40px; line-height:40px; border: none; background: #e60613; color: white; border-radius: 50px; font-size: 1rem; cursor: pointer;}
+
+/* go_top banner*/
+#go_top{display:none; width: 100%; height: 50px; background:url("../../img/logo_nintendo_red.gif") no-repeat center #e60613; position: relative;}
+#go_top a{position:absolute; top:50%; right:20px; transform:translateY(-50%); display: flex; justify-content:flex-end; align-items:center; width: 25px; height: 25px; color:white; padding:0 4px; border:2px solid white; border-radius:17px; overflow: hidden; box-sizing: border-box; transition: width .2s;}
+#go_top a span{font-size:14px; font-weight: bold;}
+#go_top a:hover{width:70px; background: white; color:#e60613;}

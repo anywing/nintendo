@@ -2,3 +2,45 @@
 html,body{width: 100%; height: 100%; font-family: 'Noto Sans KR', Arial, sans-serif;}
 section{width: 100%;}
 
+/* support */
+
+/* 공통 레이아웃 */
+#support{text-align: center; color:#333;}
+#nintendo_wrap > div, #etc_tab > div{width: 100%; padding: 50px 0 80px; box-sizing: border-box;}
+
+.photo{width: 80%; margin: 0 auto 40px; }
+.photo img{width: 100%;}
+
+h4{font-size:1.6rem; font-weight: 500;  margin-bottom: 20px;}
+.info_text{ font-weight: 300; margin-bottom: 30px; line-height: 1.4rem;}
+.head{ font-weight: 700;}
+
+.more{width: 25%; height: 35px; margin:0 auto; line-height: 35px; font-weight: 300;  }
+.more a{display: block; width: 100%; height: 100%; border-radius: 5px; transition: background-color .5s;}
+
+#support span{display: block; width: 25%; height: 15px; background: #e60613; margin: 0 auto 30px; } 
+
+
+/* switch 탭 */
+.switch{background: #333; color:white;}
+.switch .more a{outline:1px solid white; color:white;}
+.switch .more a:hover{outline: none; background: white; color:#222;}
+
+/* 3DS 탭 */
+.ds{background: #e8e8e8;}
+.ds .more a{outline:1px solid #333; color:#333;}
+.ds .more a:hover{outline: none; background: #333; color:#e8e8e8;}
+
+/* 기타 탭 */
+.etc h4{margin-bottom: 40px;}
+.etc p{color:#555; font-size: 1.2rem; line-height: 2rem; font-weight: 300;}
+
+/* 고객지원 센터 탭 */
+.center h4{margin-bottom: 40px;}
+#tel{font-size: 2rem; margin-bottom: 30px;}
+.hours{color:#555; font-size:1.2rem; line-height: 2rem; font-weight: 300;}
+
+
+@media screen and (min-width:741px) {
+    #nintendo_wrap > div, #etc_tab > div{padding: 80px 0 110px;}
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
     <script src="../js/header.js" defer></script>
     <script src="../js/footer.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="header_wrap">
@@ -71,6 +73,7 @@
                         </li>
                         <li><a href="../news/news.html?tab=0">News<i class="fa-regular fa-circle-down"></i></a>
                             <ul class="snb">
+                                <li><a href="../news/news.html?tab=0">뉴스 전체보기</a></li>
                                 <li><a href="../news/news.html?tab=1">News</a></li>
                                 <li><a href="../news/news.html?tab=2">보도자료</a></li>
                                 <li><a href="../news/news.html?tab=3">알림</a></li>
@@ -133,16 +136,39 @@
     </header>
 
     <section id="support">
-        <h1>고객지원</h1>
-        <div class="switch">
-            <h4>NINTENCO SWITCH</h4>
-            <p>Nintendo Switch 본체에 관한</p>
-            <p>고객지원 정보 안내입니다.</p>
+        <div id="nintendo_wrap">
+            <div class="switch">
+                <div class="photo"><img src="./img/switch.png" alt="닌텐도 스위치 사진"></div>
+                <h4 class="head">NINTENDO SWITCH</h4>
+                <div class="info_text">
+                    <p>Nintendo Switch 본체에 관한</p>
+                    <p>고객지원 정보 안내입니다.</p>
+                </div>
+                <div class="more"><a href="#">자세히보기</a></div>
+            </div>
+            <div class="ds">
+                <div class="photo"><img src="./img/3ds.png" alt="닌텐도 3DS 사진"></div>
+                <h4 class="head">NINTENDO 3DS 시리즈</h4>
+                <div class="info_text">
+                    <p>Nintendo 3DS 본체에 관한</p>
+                    <p>고객지원 정보 안내입니다.</p>
+                </div>
+                <div class="more"><a href="#">자세히보기</a></div>
+            </div>
         </div>
-        <div class="3ds">
-            <h4>닌텐도 3DS 시리즈</h4>
-            <p>Nintendo 3DS 본체에 관한</p>
-            <p>고객지원 정보 안내입니다.</p>
+        <div id="etc_tab">
+            <div class="etc">
+                <h4><span></span>기타 고객지원</h4>
+                <p><a href="">-게임&워치 젤다의 전설</a></p>
+                <p><a href="">-게임&워치 슈퍼 마리오 브라더스</a></p>
+                <p><a href="">-기타</a></p>
+            </div>
+            <div class="center">
+                <h4><span></span>고객지원 센터</h4>
+                <p id="tel">TEL&#41; 1670 - 9900</p>
+                <p class="hours">(평일 오전 9시 30분~오후 5시 30분)</p>
+                <p class="hours">※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+            </div>
         </div>
     </section>
 
@@ -217,4 +243,5 @@
         </div>
     </footer>
 </body>
+
 </html>

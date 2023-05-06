@@ -17,19 +17,21 @@
 
     .news_list{width: 960px; margin:0 auto;  justify-content: flex-start; gap:3.5%;}
     .news_list > li{width: 31%;}
+    #no_list{width: 960px; margin:0 auto;}
     
     #news button{margin:60px auto 130px; display:block; width: 25%; height: 40px; line-height:40px; border-radius: 50px; font-size: 1rem;}
-
+    
     #go_top{display: block;}
     #go_top a{right:calc(((100vw - 960px) / 2) + 20px);}
 }
 
 @media screen and (min-width:1320px) {
     #tab_wrap{width: 1280px;}
-
+    
     #search_bar{width: 1280px;}
-
+    
     .news_list{width: 1280px;}
+    #no_list{width: 1280px; margin:0 auto;}
 
     #go_top a{right:calc(((100vw - 1280px) / 2) + 20px);}
 }

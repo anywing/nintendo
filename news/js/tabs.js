@@ -2,6 +2,7 @@ export const tabs = document.querySelectorAll('.tab');
 export const newsList = document.querySelectorAll('.news_list li');
 export const tabArr = Array.from(tabs);
 import { plusBtn, listView } from "./plus.js";
+import { noList } from "./submit.js";
 
 const urlParam = new URLSearchParams(window.location.search);
 const tabNum = urlParam.get('tab');
@@ -20,8 +21,9 @@ function nowTab(tab) {
 
 tabs.forEach((tab) => {
     let index = 0;
-
+    
     tab.addEventListener('click', (e)=>{
+        noList.classList.remove('on');
         nowTab(tab);
         index =  tabArr.indexOf(tab);
 

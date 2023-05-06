@@ -1,6 +1,7 @@
 export const searchText = document.querySelector('#search_bar input');
 export const searchBar = document.querySelector('#search_bar form');
 export const listHead = document.querySelectorAll('.news_text .head');
+export const noList = document.querySelector('#no_list');
 
 import {newsList, tabs, showTabList, tabArr} from "./tabs.js";
 import { plusBtn, num } from "./plus.js";
@@ -31,6 +32,8 @@ searchBar.addEventListener('submit', (e) => {
 const listArr = Array.from(newsList);
 
 function listSearch(value) {
+    let searchCount = 0;
+    noList.classList.remove('on');
      newsList.forEach((li) => {
         const newsIndex = listArr.indexOf(li);
 
@@ -39,6 +42,7 @@ function listSearch(value) {
 
             if(listText.includes(value)){
                 li.classList.remove('off');
+                searchCount++;
             }
             else{
                 li.classList.add('off');
@@ -46,5 +50,7 @@ function listSearch(value) {
         }
      })
 
-     
+     if(searchCount == 0){
+        noList.classList.add('on');
+     }
 }

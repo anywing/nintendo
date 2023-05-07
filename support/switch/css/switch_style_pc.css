@@ -1,10 +1,30 @@
 @media screen and (min-width:1024px){
+    #instruction, #info_menu, #etc{width: 960px; margin: 80px auto;}
+    
+    #support_top h1{margin-bottom: 60px;}
+    #support_top #photo{width: 960px; margin: 0 auto; }
+    
+    .first{width: 50%;}
+    .tip a{font-size: 1rem;}
+
+    #ins_list{justify-content: flex-start; gap:3.5%;}
+    #ins_list li{flex-basis: 31%; height: 150px;}
+    #ins_list li a{font-size: 1.1rem;}
+    #ins_list li i{font-size: 2.4rem;}
+
+    #instruction span{display:inline-block; margin: 0; width: 10px; height: 1.6rem; margin-right: 20px;}
+    
+    #info_list{width: 100%; display: flex; gap: 5%; flex-wrap: wrap; }
+    #info_list li{flex-basis: 47.5%; height: 40px; }
+    #info_list li a{font-size: 1rem;}
 
     #go_top{display: block;}
     #go_top a{right:calc(((100vw - 960px) / 2) + 20px);}
 }
 
 @media screen and (min-width:1320px) {
+    #instruction, #info_menu, #etc{width: 1280px;}
+    #support_top #photo{width: 1280px;}
 
     #go_top a{right:calc(((100vw - 1280px) / 2) + 20px);}
 }

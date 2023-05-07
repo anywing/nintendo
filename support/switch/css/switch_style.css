@@ -1,9 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 html,body{width: 100%; height: 100%; font-family: 'Noto Sans KR', Arial, sans-serif;}
-section{width: 100%;}
+section{width: 100%; color: #333; box-sizing: border-box;  padding:0 20px; text-align: center;}
+
+/* 상단  */
+#support_top{margin:0 auto 40px; background: #333; padding: 40px 20px;}
+
+#support_top h1{font-size: 2rem; font-weight: 700; color: white; margin-bottom: 40px;} 
+#support_top #photo{width: 100%;} 
+#support_top #photo img{width: 100%;} 
+
+/* 사용방법 */
+#instruction span{display: block; width: 25%; height: 15px; background: #e60613; margin: 0 auto 30px; } 
+#instruction h2{font-size:1.6rem; font-weight: 500;  margin-bottom: 40px;}
+
+/* 처음사용하는 경우에 */
+.first{width: 70%; height: 60px; background: #e60613; border-radius: 10px; margin: 0 auto 20px; transition: all .3s;}
+.first a{width: 100%; height: 100%; display: flex;  color:white; justify-content: center; align-items: center; flex-direction: column; gap:5px; transition: all .3s;}
+.first a p:last-child{font-size: 0.8rem; font-weight: 300;}
+
+.first:hover{background: none; border:1px solid #e60613; box-sizing: border-box;}
+.first:hover a{color: #e60613;}
+
+/* 각종 팁 */
+.tip a{font-size: 0.9rem; font-weight: 500;}
+.tip a:hover{color: #e60613;}
+.tip a i{color:#e60613;}
+
+/* 사용방법 리스트 */
+#ins_list{margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: space-between;}
+#ins_list li{flex-basis: 46%; height: 120px; box-shadow: 3px 3px 5px rgba(0,0,0,0.2); margin-bottom: 30px; border:1px solid rgba(0,0,0,0.1); border-radius: 5px; box-sizing: border-box;}
+
+#ins_list li a{display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; font-size: 0.8rem; word-break: keep-all; transition: all .3s;}
+#ins_list li i{width: 100%; font-size:2.2rem; display: block; color:#666; margin-bottom: 10px; transition: all .3s;}
+
+#ins_list li a:hover, #ins_list li a:hover i {color: #e60613;}
+
+/* 안내 리스트 */
+#info_menu{margin-top: 40px;}
+#info_list li{width: 80%; height: 40px; background: #e60613; margin: 0 auto 20px; line-height: 40px;}
+#info_list li a{display:block; width: 100%; height: 100%; color:white; font-size: 0.9rem; font-weight: 300;}
+
+/* 기타 안내사항 */
+#etc{margin: 60px 0;}
+#etc p{text-align: left; margin-bottom: 20px; word-break: keep-all;}
 
 /* go_top banner*/
-#go_top{display:none; width: 100%; height: 50px; background:url("../../../img/logo_nintendo_red.gif") no-repeat center #e60613; position: relative;}
+#go_top{width: 100%; height: 50px; background:url("../../../img/logo_nintendo_red.gif") no-repeat center #e60613; position: relative;}
 #go_top a{position:absolute; top:50%; right:20px; transform:translateY(-50%); display: flex; justify-content:flex-end; align-items:center; width: 25px; height: 25px; color:white; padding:0 4px; border:2px solid white; border-radius:17px; overflow: hidden; box-sizing: border-box; transition: width .2s;}
 #go_top a span{font-size:14px; font-weight: bold;}
 #go_top a:hover{width:70px; background: white; color:#e60613;}
+
+@media screen and (max-width : 400px) {
+    body{font-size: 14px;}
+
+    .first{width: 100%;}
+    #info_list li{width: 100%; height: auto; line-height: 1rem; word-break: keep-all; padding:12px 0;}
+}

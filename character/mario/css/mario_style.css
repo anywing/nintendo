@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+html,body{width: 100%; height: 100%; font-family: 'Noto Sans KR', Arial, sans-serif;}
+section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; color:#222;}
+
+/*블록 라인 css*/
+.line{width: 100%; margin: 0; font-size: 0;}
+.line img{width: 100%;}
+
+/* top */
+#top{ background: url("../img/bg-01.png") #e60613; background-size: 70%; position: relative;}
+
+#logo{width: 100%; text-align: center; padding:40px 0; font-size: 0;}
+#logo img{width: 50%;}
+
+#slogan{width: 100%;margin-top: 30px; font-size: 0;}
+#slogan img{width: 100%;}
+
+.mario{width: 100%; display: flex; justify-content: space-between; margin-top: 40px;}
+.mario>p{flex-basis: 50%; font-size: 0;}
+.mario>p img{width: 100%;}
+
+.block{width: 100%; height:90px; position: relative; margin-top: 80px; left:20px;}
+.block p {position: absolute; top:0; right:0; font-size: 0;}
+.block p img{height: 100%;}
+
+.block p:first-child{height: 90px; top:-90px;}
+.block p:last-child{height: 90px;}
+
+.mario_text{flex-basis:40%; }
+.mario_text p{color:white; word-break: keep-all; line-height: 1.3rem; font-weight: 300; font-size: 0.9rem; margin-bottom: 16px;}
+.mario_text p:last-child{margin: 0;}
+
+.bottom_cha{display: none;}
+
+.cha{position: absolute; width: 20%; top:80px; right:-2%; font-size: 0;}
+.cha img{width: 100%;}
+
+
+/* news */
+#news .head{width:fit-content; margin:60px auto; position: relative; color: #e60613; font-size: 2rem; font-weight: 700;}
+#news .head img{position: absolute; height: 150%; left:-70%; top:50%; transform: translateY(-50%);}
+
+#news_list li{width: 100%;  border-bottom: 1px solid #e60613; margin-bottom: 40px;}
+#news_list li:last-child{border:none;}
+#news_list li a{overflow: hidden; width: 100%; display: block; font-size: 0;}
+#news_list li a img{width: 100%; transition: all .3s;}
+#news_list li a:hover img{transform: scale(1.05); opacity: 0.8;}
+
+.news_text{padding:30px 20px; word-break: keep-all;}
+.news_head{ line-height: 1.2rem; }
+.news_info{margin-top:20px; display: flex; justify-content: space-between; color:#555; font-weight: 300;}
+.news_info a{color: #e60613;}
+.news_info a:hover{font-weight: 400;}
+
+/* movie */
+#movie{background: url("../img/bg-01_white.png") #111; background-size: 70%; padding: 0;}
+
+#movie_info{margin:20px 0 60px;}
+
+#movie_info > p {width: 100%; text-align: center; color:white; font-size: 1.6rem; line-height: 2rem;}
+#movie_info > p:last-child{font-weight: 100; font-size: 1.3rem;}
+#movie_info p:first-child img{width: 80%;}
+
+#movie_wrap > p img{width: 100%;}
+
+/* games */
+#games .head{width:fit-content; margin:60px auto; position: relative; color: #e60613; font-size: 2rem; font-weight: 700;}
+#games .head img{position: absolute; height: 150%; left:-60%; top:50%; transform: translateY(-50%);}
+
+#games_list li{width: 100%; margin-bottom: 40px;}
+#games_list li a{overflow: hidden; width: 100%; display: block; font-size: 0;}
+#games_list li a img{width: 100%; transition: all .3s;}
+#games_list li a:hover img{transform: scale(1.05); opacity: 0.8;}
+
+.games_info{padding:30px 20px; word-break: keep-all;}
+.game_name{font-size: 1.3rem; font-weight: 500; margin-bottom: 14px;}
+.model{font-weight: 300;}
+
+
+/*bottom wrap*/
+#bottom_wrap{background: url("../img/bg-01.png") #e60613; background-size: 70%;}
+/* etc */
+#etc{ padding: 20px 0; position: relative; margin-bottom: 80px;}
+.mario_plays{width: 100%; margin-bottom:60px;}
+.mario_plays h4{margin:20px auto 0; width: 80%; height: 140px; background: url(../img/mario_plays.svg) no-repeat center; background-size: contain; position: relative; z-index: 100; left:10%; top:40px;}
+
+#play_list{width: 250%; display: flex; gap:20px; transition: all linear 1s; }
+#play_list li{width: 50%; font-size: 0;}
+#play_list li img{width: 100%;}
+
+.relation{width: 100%; padding: 0 20px; box-sizing: border-box;}
+.relation div{width: 100%; font-size: 0; position: relative;  overflow: hidden;}
+.relation div:first-child{margin-bottom: 60px; color:firebrick;}
+.relation div a{color: white;}
+.relation div:first-child a{color:firebrick;}
+.relation div img{width: 100%; transition: all .3s;}
+
+.relation div:hover img{transform: scale(1.05);}
+
+.relation div p{font-size: 1.2rem; position: absolute; bottom: 0; left:0; text-align: center; width: 100%; height: 30%; display: flex; justify-content: center; flex-direction: column;}
+.relation div p span{display: block; font-weight: 700; font-size: 2.4rem; margin-bottom: 10px;} 
+.relation div p i{position: absolute; right:5%;}
+
+/*footer*/
+footer{width: 100%; display: flex; justify-content: space-between; padding:0 20px 80px; box-sizing: border-box;}
+
+#footer_left{width: 30%; display: flex; flex-direction: column; gap: 20px; justify-content: space-between;}
+#footer_left p{width: 100%; font-size: 0.8rem; }
+#footer_left p img{width: 100%;}
+#footer_left p a{ color: white;}
+
+#menu{display: none;}
+
+#footer_right{width: 20%; text-align: center;}
+#footer_right p{width: 100%; color: white; font-size: 0.8rem;}
+#footer_right p a img{width: 100%;}
+
+#go-top{margin-bottom: 20px;}
+
+@media screen and (max-width:450px) {
+    .mario{width: 80%; display: block; position: relative; margin: 40px auto 0; }
+    .mario>p{width: 100%; }
+
+    .mario_text{margin-top: 40px;}
+    .mario_text p{margin-bottom: 10px;}
+
+    .relation div p{font-size: 0.9rem;}
+    .relation div p span{font-size: 1.6rem; margin-bottom: 5px;} 
+
+    #footer_left{width: 40%;}
+    #footer_left p{word-break: keep-all;}
+}
+
+@media screen and (min-width:570px) and (max-width:740px) {
+    .mario_text p{font-size: 1.2rem; margin-bottom: 1.5rem;}
+}

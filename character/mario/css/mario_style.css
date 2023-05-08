@@ -42,7 +42,7 @@ section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; c
 
 #news_list li{width: 100%;  border-bottom: 1px solid #e60613; margin-bottom: 40px;}
 #news_list li:last-child{border:none;}
-#news_list li a{overflow: hidden; width: 100%; display: block; font-size: 0;}
+#news_list li>a{overflow: hidden; width: 100%; display: block; font-size: 0;}
 #news_list li a img{width: 100%; transition: all .3s;}
 #news_list li a:hover img{transform: scale(1.05); opacity: 0.8;}
 
@@ -68,13 +68,15 @@ section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; c
 #games .head img{position: absolute; height: 150%; left:-60%; top:50%; transform: translateY(-50%);}
 
 #games_list li{width: 100%; margin-bottom: 40px;}
-#games_list li a{overflow: hidden; width: 100%; display: block; font-size: 0;}
+#games_list li a{overflow: hidden; width: 100%; display: block; font-size: 0; position: relative; z-index: 999;}
 #games_list li a img{width: 100%; transition: all .3s;}
 #games_list li a:hover img{transform: scale(1.05); opacity: 0.8;}
 
+.hover_bg{ opacity: 0;}
+
 .games_info{padding:30px 20px; word-break: keep-all;}
 .game_name{font-size: 1.3rem; font-weight: 500; margin-bottom: 14px;}
-.model{font-weight: 300;}
+.model{font-weight: 300; font-size: 1rem;}
 
 
 /*bottom wrap*/
@@ -131,6 +133,6 @@ footer{width: 100%; display: flex; justify-content: space-between; padding:0 20p
     #footer_left p{word-break: keep-all;}
 }
 
-@media screen and (min-width:570px) and (max-width:740px) {
+@media screen and (min-width:570px) {
     .mario_text p{font-size: 1.2rem; margin-bottom: 1.5rem;}
 }

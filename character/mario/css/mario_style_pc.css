@@ -1,5 +1,6 @@
 @media screen and (min-width:741px) {
-    .mario>p:first-child{width: 10%; flex-basis: 30%;} 
+    .mario>p{width: 10%; flex-basis: 30%;} 
+    .mario_text{flex-basis: 57%;}
 
     .bottom_cha{display: block; width: 100%;}
     .bottom_cha p{position: absolute; width: 10%; bottom: 90px; right: 100px;}
@@ -27,21 +28,92 @@
     #games_list li a:hover img{transform: none; opacity: 1;}
     #games_list li a:hover .games_info, #games_list li a:hover .hover_bg{opacity: 1;}
 
-    .mario_plays h4{left:0;}
-    #play_list{width: 125%; display: flex; gap:20px; transition: all linear 1s; }
+    .mario_plays h4{left:0; margin:20px auto calc(25vw + 20px);}
+    #play_view{height: calc(25vw + 20px); position: absolute; left: 0;}
+    #play_list{width: 200%; display: flex; gap:20px; transition: all linear 1s; }
     #play_list li{width: 25%; font-size: 0;}
 
     .relation{display: flex; gap:20px; align-items: flex-start;}
     
     .relation div p{font-size: 0.8rem; bottom: 0; }
     .relation div p span{font-size: 1.2rem; margin-bottom: 5px;} 
-
-
+    
     #footer_left{width: 30%; display: flex; flex-direction: column; gap: 20px; justify-content: space-between;}
     #footer_left p{font-size: 1rem; }
-
-
+    
     #footer_right{width: 10%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;}
     #footer_right p{width: 100%; color: white; font-size: 1rem;}
+}
 
+@media screen and (min-width:1024px){
+    #top{padding: 0; background-size: 20%;}
+    .wrap{width: 960px; margin: 0 auto; position: relative;}
+    
+    .line_m{display: none;}
+    .line_pc{display: block;}
+    
+    #logo{text-align: left; position: relative; z-index: 100;}
+    #logo img{width: 30%;}
+    
+    #slogan{position: absolute; bottom: -120px; left:15%; width: 60%;}
+    
+    .mario{ position: relative; width: 100%; padding-bottom: 60px;}
+    .mario>p{position: absolute; right: 100px; top: -240px; width: 30%;}
+    
+    .bottom_cha p{position: absolute; width: 10%; max-width: 100px; bottom: 90px; right: 100px;}
+    .bottom_cha p:first-child{top:0; left: 45%;}
+    .bottom_cha p:nth-child(2){display: none;}
+    .bottom_cha p:last-child{left:calc((100vw - 960px) / 2); bottom:20px;}
+    
+    .block{height: 5vw;}
+    .block p:first-child{width: 5vw; top:-5vw;right: 15vw;}
+    .block p:nth-child(2){display: none;}
+    .block p img{width: 100%; height: auto;}
+    
+    #news .head{ position: relative; margin:80px 0;}
+    #news .head img{position: relative; width: 3.6rem; left: 0; top:0; transform: translateY(25%); margin-right: 20px;}
+    
+    #news_list li{margin-bottom: 120px;}
+    
+    #movie{background-size: 20%;}
+    
+    #games .head{ position: relative; margin:80px 0;}
+    #games .head img{position: relative; width: 3.6rem; left: 0; top:0; transform: translateY(25%); margin-right: 20px;}
+    #games_list li{margin-bottom: 120px;}
+    
+    #bottom_wrap{background-size: 20%;}
+  
+    .relation div p{font-size: 1.2rem;}
+    .relation div p span{font-size: 2rem;} 
+    
+    footer{border-top:1px solid white; padding:120px 40px;}
+    #footer_left{width: 160px;}
+    #footer_right{width: 80px;}
+    
+    #menu{display: block; background: #eee; border-radius: 5px; padding: 20px 40px;}
+    #footer_menu{display: flex; align-items: center;}
+    
+    #footer_menu li{ padding:0 20px; box-sizing: border-box; border-right: 1px solid silver;}
+    #footer_menu li:last-child{border:none;}
+    #footer_menu li a{width: 100%; display: flex; align-items: center; gap: 10px; font-weight: 700;}
+    #footer_menu li a:hover{color:#e60613;}
+    #footer_menu li img{width: 25px; }
+}
+
+@media screen and (min-width:1320px) {
+    .wrap{width: 1280px;}
+    
+    #slogan{left:120px;}
+    
+    .mario>p{ right: 200px; top: -240px; width: 20%;}
+    
+    .bottom_cha p:last-child{left:calc((100vw - 1320px) / 2);}
+}
+
+@media screen and (min-width:1660px) {
+    .bottom_cha p:first-child{left:7%;}
+    .bottom_cha p:nth-child(2){top:40%; left: 0; display: block;}
+    
+    .relation div p{font-size: 1.4rem;}
+    .relation div p span{font-size: 2.4rem;} 
 }

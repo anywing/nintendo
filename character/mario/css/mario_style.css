@@ -5,6 +5,7 @@ section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; c
 /*블록 라인 css*/
 .line{width: 100%; margin: 0; font-size: 0;}
 .line img{width: 100%;}
+.line_pc{display: none;}
 
 /* top */
 #top{ background: url("../img/bg-01.png") #e60613; background-size: 70%; position: relative;}
@@ -16,25 +17,26 @@ section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; c
 #slogan img{width: 100%;}
 
 .mario{width: 100%; display: flex; justify-content: space-between; margin-top: 40px;}
-.mario>p{flex-basis: 50%; font-size: 0;}
-.mario>p img{width: 100%;}
+.mario>p{flex-basis: 50%; font-size: 0; overflow: hidden;}
+.mario>p img{width: 100%; transition: all ease .4s;}
+.mario>p img.start{transform: translateY(100%);}
 
 .block{width: 100%; height:90px; position: relative; margin-top: 80px; left:20px;}
-.block p {position: absolute; top:0; right:0; font-size: 0;}
+.block p {position: absolute; bottom:0; right:0; font-size: 0;}
 .block p img{height: 100%;}
 
 .block p:first-child{height: 90px; top:-90px;}
-.block p:last-child{height: 90px;}
+.block p:nth-child(2){height: 90px;}
 
-.mario_text{flex-basis:40%; }
+.mario_text{flex-basis:40%; transition: opacity .3s;}
+.mario_text.start{opacity: 0; }
 .mario_text p{color:white; word-break: keep-all; line-height: 1.3rem; font-weight: 300; font-size: 0.9rem; margin-bottom: 16px;}
 .mario_text p:last-child{margin: 0;}
 
 .bottom_cha{display: none;}
 
-.cha{position: absolute; width: 20%; top:80px; right:-2%; font-size: 0;}
+.cha{position: absolute; width: 20%; top:80px; max-width: 150px; right:-2%; font-size: 0;}
 .cha img{width: 100%;}
-
 
 /* news */
 #news .head{width:fit-content; margin:60px auto; position: relative; color: #e60613; font-size: 2rem; font-weight: 700;}
@@ -80,14 +82,15 @@ section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; c
 
 
 /*bottom wrap*/
-#bottom_wrap{background: url("../img/bg-01.png") #e60613; background-size: 70%;}
+#bottom_wrap{width: 100%; background: url("../img/bg-01.png") #e60613; background-size: 70%; position: relative;}
 /* etc */
 #etc{ padding: 20px 0; position: relative; margin-bottom: 80px;}
-.mario_plays{width: 100%; margin-bottom:60px;}
-.mario_plays h4{margin:20px auto 0; width: 80%; height: 140px; background: url(../img/mario_plays.svg) no-repeat center; background-size: contain; position: relative; z-index: 100; left:10%; top:40px;}
+.mario_plays{width: 100%;  margin-bottom:60px;}
+.mario_plays h4{margin:20px auto calc(50vw + 20px); width: 80%; height: 140px; background: url(../img/mario_plays.svg) no-repeat center; background-size: contain; position: relative; z-index: 100; left:10%; top:40px;}
 
-#play_list{width: 250%; display: flex; gap:20px; transition: all linear 1s; }
-#play_list li{width: 50%; font-size: 0;}
+#play_view{width: 100%; height: calc(50vw + 20px); position: absolute; overflow: hidden; top: 160px;}
+#play_list{width: calc(((50% - 10px) * 8) + 150px); display: flex; gap:20px; transition: left linear 8s; position: absolute; left: 0; top: 0;}
+#play_list li{width: calc(50% - 10px); font-size: 0;}
 #play_list li img{width: 100%;}
 
 .relation{width: 100%; padding: 0 20px; box-sizing: border-box;}
@@ -104,7 +107,7 @@ section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; c
 .relation div p i{position: absolute; right:5%;}
 
 /*footer*/
-footer{width: 100%; display: flex; justify-content: space-between; padding:0 20px 80px; box-sizing: border-box;}
+footer{width: 100%; display: flex; justify-content: space-between; align-items: center; padding:0 20px 80px; box-sizing: border-box;}
 
 #footer_left{width: 30%; display: flex; flex-direction: column; gap: 20px; justify-content: space-between;}
 #footer_left p{width: 100%; font-size: 0.8rem; }

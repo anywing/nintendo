@@ -7,130 +7,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마리오 포털 | Nintendo</title>
 
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="./css/mario_style.css">
     <link rel="stylesheet" href="./css/mario_style_pc.css">
     <link rel="icon" href="../../favicon//favi.png">
 
+    <script src="./js/ani.js" defer></script>
+    <script src="./js/play.js" defer></script>
     <script src="https://kit.fontawesome.com/7aa93c4da2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <section id="top">
-        <p id="logo"><img src="./img/logo.png" alt="마리오 포털"></p>
-        <p id="slogan"><img src="./img/text-01-low.png" alt="It's-a me, MARIO!"></p>
+        <div class="wrap">
 
-        <div class="mario">
-            <p><img src="./img/img-head.png" alt="마리오가 손을 높이들고 점프하고 있다"></p>
-            <div class="mario_text">
-                <p>빨간 모자에 파란 작업복, 트레이드 마크인 콧수염.<br>언제나 밝고 활기찬 마리오.</p>
-                <p>달리고, 뛰고, 슈퍼버섯으로 파워 업!<br>다양한 액션과 아이템으로 세계 각지로 모험을 떠납니다.</p>
-                <p>골프, 테니스를 비롯한 각종 스포츠도 잘하고,<br>화려한 드라이빙 테크닉을 뽐내기도 합니다.</p>
-                <p>1981년, 아케이드 버전『동키콩』에 등장한 이래,<br>수 많은 게임에서 활약 중인 마리오!</p>
-                <p>루이지나 피치공주, 요시 등 많은 친구들과 함께<br>앞으로도 마리오의 모험은 계속됩니다!</p>
+
+            <p id="logo"><img src="./img/logo.png" alt="마리오 포털"></p>
+            <p id="slogan"><img src="./img/text-01-low.png" alt="It's-a me, MARIO!"></p>
+
+            <div class="mario">
+                <p ><img class="start" src="./img/img-head.png" alt="마리오가 손을 높이들고 점프하고 있다"></p>
+                <div class="mario_text start">
+                    <p>빨간 모자에 파란 작업복, 트레이드 마크인 콧수염.<br>언제나 밝고 활기찬 마리오.</p>
+                    <p>달리고, 뛰고, 슈퍼버섯으로 파워 업!<br>다양한 액션과 아이템으로 세계 각지로 모험을 떠납니다.</p>
+                    <p>골프, 테니스를 비롯한 각종 스포츠도 잘하고,<br>화려한 드라이빙 테크닉을 뽐내기도 합니다.</p>
+                    <p>1981년, 아케이드 버전『동키콩』에 등장한 이래,<br>수 많은 게임에서 활약 중인 마리오!</p>
+                    <p>루이지나 피치공주, 요시 등 많은 친구들과 함께<br>앞으로도 마리오의 모험은 계속됩니다!</p>
+                </div>
             </div>
-        </div>
 
+
+        </div>
+        <div class="bottom_cha">
+            <p><img src="./img/img-chara-05.png" alt="점프하는 루이지"></p>
+            <p><img src="./img/img-chara-07.png" alt="팔을 벌리고 있는 키노피오"></p>
+            <p><img src="./img/img-chara-13-low.png" alt="춤추는 엉금엉금"></p>
+        </div>
+        <p class="cha"><img src="./img/img-chara-09.png" alt="걷고있는 굼바"></p>
         <div class="block">
             <p><img src="./img/img-chara-01.png" alt="슈퍼버섯"></p>
             <p><img src="./img/img-block-02.png" alt="물음표 박스가 있는 벽돌블럭이 있다"></p>
+            <p class="line line_pc"><img src="./img/block_pc_top.png" alt="물음표 박스가 있는 벽돌블럭이 있다"></p>
         </div>
-
-        <div class="bottom_cha">
-            <p><img src="./img/img-chara-05.png" alt=""></p>
-            <p><img src="./img/img-chara-07.png" alt=""></p>
-            <p><img src="./img/img-chara-13-low.png" alt=""></p>
-        </div>
-        <p class="cha"><img src="./img/img-chara-09.png" alt=""></p>
     </section>
 
     <section id="news">
-        <p class="head"><img src="./img/mario_heading.png" alt="도트 마리오가 점프하고 있다">NEWS</p>
+        <div class="wrap">
+            <p class="head"><img src="./img/mario_heading.png" alt="도트 마리오가 점프하고 있다">NEWS</p>
 
-        <ul id="news_list">
-            <li><a href="#"><img src="./img/news_img01.jpg" alt="슈퍼 마리오 브라더스 영화의 포스터와, 마리오 그림"></a>
-                <div class="news_text">
-                    <p class="news_head">『Super Mario Run』이 영화 『슈퍼 마리오 브라더스』의 개봉을 기념하여 이벤트 개최. 기간 한정 스페셜 할인도 실시.</p>
-                    <div class="news_info">
-                        <p class="date">2023.03.24</p>
-                        <p class="more"><a href="#">자세히보기 ></a></p>
+            <ul id="news_list">
+                <li><a href="#"><img src="./img/news_img01.jpg" alt="슈퍼 마리오 브라더스 영화의 포스터와, 마리오 그림"></a>
+                    <div class="news_text">
+                        <p class="news_head">『Super Mario Run』이 영화 『슈퍼 마리오 브라더스』의 개봉을 기념하여 이벤트 개최. 기간 한정 스페셜 할인도 실시.</p>
+                        <div class="news_info">
+                            <p class="date">2023.03.24</p>
+                            <p class="more"><a href="#">자세히보기 ></a></p>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li><a href="#"><img src="./img/news_img02.jpg" alt="슈퍼 마리오 브라더스 영화의 파이널 트레일러 스틸컷"></a>
-                <div class="news_text">
-                    <p class="news_head">영화 『슈퍼 마리오 브라더스』의 파이널 트레일러가 공개되었습니다.</p>
-                    <div class="news_info">
-                        <p class="date">2023.03.10</p>
-                        <p class="more"><a href="#">자세히보기 ></a></p>
+                </li>
+                <li><a href="#"><img src="./img/news_img02.jpg" alt="슈퍼 마리오 브라더스 영화의 파이널 트레일러 스틸컷"></a>
+                    <div class="news_text">
+                        <p class="news_head">영화 『슈퍼 마리오 브라더스』의 파이널 트레일러가 공개되었습니다.</p>
+                        <div class="news_info">
+                            <p class="date">2023.03.10</p>
+                            <p class="more"><a href="#">자세히보기 ></a></p>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li><a href="#"><img src="./img/news_img03.jpg" alt="마리오 카드 8 디럭스 부스터 코스 패스 제 4탄 사진"></a>
-                <div class="news_text">
-                    <p class="news_head">『마리오 카트 8 디럭스 – 부스터 코스 패스』 제4탄이 3월 9일(목)에 배포됩니다. 코스 소개 영상도 공개되었습니다.</p>
-                    <div class="news_info">
-                        <p class="date">2023.03.06</p>
-                        <p class="more"><a href="#">자세히보기 ></a></p>
+                </li>
+                <li><a href="#"><img src="./img/news_img03.jpg" alt="마리오 카드 8 디럭스 부스터 코스 패스 제 4탄 사진"></a>
+                    <div class="news_text">
+                        <p class="news_head">『마리오 카트 8 디럭스 – 부스터 코스 패스』 제4탄이 3월 9일(목)에 배포됩니다. 코스 소개 영상도 공개되었습니다.</p>
+                        <div class="news_info">
+                            <p class="date">2023.03.06</p>
+                            <p class="more"><a href="#">자세히보기 ></a></p>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    
-    <section id="movie">
-        <p class="line"><img src="./img/block_m.png" alt="마리오 블럭이 5개 모여있다"></p>
-        <div id="movie_wrap">
-            <div id="movie_info">
-                <p><img src="./img/movie_title.png" alt="슈퍼 마리오 브라더스 영화 로고"></p>
-                <p>2023.04.26[수]</p>
-                <p>개봉예정</p>
-            </div>
-            <p><img src="./img/movie_poster.jpg" alt="슈퍼 마리오 브라더스 영화 포스터"></p>
+                </li>
+            </ul>
         </div>
-        <p class="line"><img src="./img/block_m.png" alt="마리오 블럭이 5개 모여있다"></p>
     </section>
 
-    
-    <section id="games">
-        <p class="head"><img src="./img/mario_heading.png" alt="도트 마리오가 점프하고 있다">GAMES</p>
-        
-        <ul id="games_list">
-            <li><a href="#"><img src="./img/game1.jpg" alt="마리오 카트 8 디럭스 이미지">
-                <div class="hover_bg"></div>
-                <div class="games_info">
-                    <p class="game_name">마리오 카트 8 디럭스</p>
-                    <p class="model">NINTENDO SWITCH</p>
+
+    <section id="movie">
+        <p class="line line_pc"><img src="./img/block_pc.png" alt="마리오 블럭이 가로로 여러개 모여있다"></p>
+        <div class="wrap">
+            <p class="line line_m"><img src="./img/block_m.png" alt="마리오 블럭이 5개 모여있다"></p>
+            <div id="movie_wrap">
+                <div id="movie_info">
+                    <p><img src="./img/movie_title.png" alt="슈퍼 마리오 브라더스 영화 로고"></p>
+                    <p>2023.04.26[수]</p>
+                    <p>개봉예정</p>
                 </div>
-            </a>
-            </li>
-            <li><a href="#"><img src="./img/game2.jpg" alt="슈퍼 마리오 오디세이 이미지">
-                <div class="hover_bg"></div>
-                <div class="games_info">
-                    <p class="game_name">슈퍼 마리오 오디세이</p>
-                    <p class="model">NINTENDO SWITCH</p>
-                </div>
-            </a>
-            </li>
-            <li><a href="#"><img src="./img/game3.jpg" alt="슈퍼 마리오 3D월드 이미지">
-                <div class="hover_bg"></div>
-                <div class="games_info">
-                    <p class="game_name">슈퍼 마리오 3D월드 + 퓨리 월드</p>
-                    <p class="model">NINTENDO SWITCH</p>
-                </div>
-            </a>
-            </li>
-        </ul>
+                <p><img src="./img/movie_poster.jpg" alt="슈퍼 마리오 브라더스 영화 포스터"></p>
+            </div>
+            <p class="line line_m"><img src="./img/block_m.png" alt="마리오 블럭이 5개 모여있다"></p>
+        </div>
+        <p class="line line_pc"><img src="./img/block_pc.png" alt="마리오 블럭이 가로로 여러개 모여있다"></p>
     </section>
-    
-    <p class="line"><img src="./img/block_m_last.png" alt="마리오 블럭이 5개 모여있고 두번째블럭은 물음표블럭이다."></p>
+
+
+    <section id="games">
+        <div class="wrap">
+            <p class="head"><img src="./img/mario_heading.png" alt="도트 마리오가 점프하고 있다">GAMES</p>
+
+            <ul id="games_list">
+                <li><a href="#"><img src="./img/game1.jpg" alt="마리오 카트 8 디럭스 이미지">
+                        <div class="hover_bg"></div>
+                        <div class="games_info">
+                            <p class="game_name">마리오 카트 8 디럭스</p>
+                            <p class="model">NINTENDO SWITCH</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#"><img src="./img/game2.jpg" alt="슈퍼 마리오 오디세이 이미지">
+                        <div class="hover_bg"></div>
+                        <div class="games_info">
+                            <p class="game_name">슈퍼 마리오 오디세이</p>
+                            <p class="model">NINTENDO SWITCH</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#"><img src="./img/game3.jpg" alt="슈퍼 마리오 3D월드 이미지">
+                        <div class="hover_bg"></div>
+                        <div class="games_info">
+                            <p class="game_name">슈퍼 마리오 3D월드 + 퓨리 월드</p>
+                            <p class="model">NINTENDO SWITCH</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <p class="line line_m"><img src="./img/block_m_last.png" alt="마리오 블럭이 5개 모여있고 두번째블럭은 물음표블럭이다."></p>
+    <p class="line line_pc"><img src="./img/block_pc.png" alt="마리오 블럭이 가로로 여러개 모여있다"></p>
 
     <div id="bottom_wrap">
-    <section id="etc">
-        <div class="mario_plays">
-            <h4></h4>
-            
+        <div id="play_view">
             <ul id="play_list">
                 <li><img src="./img/play1.png" alt="하늘색 배경에 마리오가 야구를 하는 모습"></li>
                 <li><img src="./img/play2.png" alt="파란색 배경에 마리오가 카트를 하는 모습"></li>
@@ -138,33 +151,43 @@
                 <li><img src="./img/play4.png" alt="분홍색 배경에 마리오가 테니스를 하는 모습"></li>
             </ul>
         </div>
-        
-        <div class="relation">
-            <div><a href="#"><img src="./img/line-up_bg.jpg" alt="마리오 관련 소프트웨어들이 나열되어 있다"><p><span>GAME ARCHIVES</span>「마리오」소프트웨어 리스트<i class="fa-solid fa-right-long"></i></p></a></div>
-            <div><a href="#"><img src="./img/cha_bg.png" alt="마리오 시리즈에 등장한 캐릭터들이 들판에 서있는 모습"><p><span>CHARACTER</span>「마리오」시리즈에 등장한 캐릭터<i class="fa-solid fa-right-long"></i></p></a></div>
+        <div class="wrap">
+            <section id="etc">
+                <div class="mario_plays">
+                    <h4></h4>
+                </div>
+
+                <div class="relation">
+                    <div><a href="#"><img src="./img/line-up_bg.jpg" alt="마리오 관련 소프트웨어들이 나열되어 있다">
+                            <p><span>GAME ARCHIVES</span>「마리오」소프트웨어 리스트<i class="fa-solid fa-right-long"></i></p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/cha_bg.png" alt="마리오 시리즈에 등장한 캐릭터들이 들판에 서있는 모습">
+                            <p><span>CHARACTER</span>「마리오」시리즈에 등장한 캐릭터<i class="fa-solid fa-right-long"></i></p>
+                        </a></div>
+                </div>
+            </section>
         </div>
-    </section>
-    
-    <footer>
-        <div id="footer_left">
-            <p><img src="./img/logo.png" alt="마리오 포털 로고 이미지"></p>
-            <p><a href="/index.html"><i class="fa-solid fa-circle-chevron-right"></i> 한국닌텐도 홈페이지</a></p>
-            <p><a href="#"><i class="fa-solid fa-circle-chevron-right"></i> 개인정보 처리방침</a></p>
-        </div>
-        <div id="menu">
-            <ul id="footer_menu">
-                <li><a href="#news"><img src="./img/footer_news.png" alt="물음표 블럭">NEWS</a></li>
-                <li><a href="#games"><img src="./img/footer_games.png" alt="슈퍼 버섯">GAMES</a></li>
-                <li><a href="#"><img src="./img/footer_lineup.png" alt="파이어플라워">LINE-UP</a></li>
-                <li><a href="#"><img src="./img/footer_cha.png" alt="슈퍼스타">CHARACTER</a></li>
-            </ul>
-        </div>
-        <div id="footer_right">
-            <p id="go-top"><a href="#"><img src="./img/top_block.png" alt="위로 향하는 화살표가 그려진 노란색 블럭"></a></p>
-            <p>&copy;Nintendo</p>
-        </div>
-    </footer>
-</div>
+        <footer>
+            <div id="footer_left">
+                <p><img src="./img/logo.png" alt="마리오 포털 로고 이미지"></p>
+                <p><a href="../../index.html"><i class="fa-solid fa-circle-chevron-right"></i> 한국닌텐도 홈페이지</a></p>
+                <p><a href="#"><i class="fa-solid fa-circle-chevron-right"></i> 개인정보 처리방침</a></p>
+            </div>
+            <div id="menu">
+                <ul id="footer_menu">
+                    <li><a href="#news"><img src="./img/footer_news.png" alt="물음표 블럭">NEWS</a></li>
+                    <li><a href="#games"><img src="./img/footer_games.png" alt="슈퍼 버섯">GAMES</a></li>
+                    <li><a href="#"><img src="./img/footer_lineup.png" alt="파이어플라워">LINE-UP</a></li>
+                    <li><a href="#"><img src="./img/footer_cha.png" alt="슈퍼스타">CHARACTER</a></li>
+                </ul>
+            </div>
+            <div id="footer_right">
+                <p id="go-top"><a href="#"><img src="./img/top_block.png" alt="위로 향하는 화살표가 그려진 노란색 블럭"></a></p>
+                <p>&copy;Nintendo</p>
+            </div>
+        </footer>
+
+    </div>
 </body>
 
 </html>

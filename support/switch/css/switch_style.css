@@ -5,7 +5,7 @@ section{width: 100%; color: #333; box-sizing: border-box;  padding:0 20px; text-
 /* 상단  */
 #support_top{margin:0 auto 40px; background: #333; padding: 40px 20px;}
 
-#support_top h1{font-size: 2rem; font-weight: 700; color: white; margin-bottom: 40px;} 
+#support_top h1{font-size: 1.6rem; font-weight: 700; color: white; margin-bottom: 40px; word-break: keep-all;} 
 #support_top #photo{width: 100%;} 
 #support_top #photo img{width: 100%;} 
 

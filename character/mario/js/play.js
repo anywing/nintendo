@@ -11,14 +11,15 @@ let itemWidth = playItem[0].clientWidth + 20;
 let count = 4;
 let margin = count * itemWidth;
 
+
 function slideRight() {
-    playLi.style.transition = 'left linear 8000ms';
+    playLi.style.transition = 'left linear 32000ms';
     playLi.style.left = -margin + 'px';
     
     setTimeout (function(){
         playLi.style.transition = 'left linear 0s';
         playLi.style.left = 0 + 'px';
-    }, 8000);
+    }, 32000);
     
 }
 
@@ -28,7 +29,7 @@ let slideEvent;
 function slideOn() {
     slideEvent = setInterval(() =>{
         slideRight();
-    }, 8020);
+    }, 32020);
 }
 
 

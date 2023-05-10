@@ -89,7 +89,7 @@ section{width: 100%; padding:0 20px; box-sizing: border-box; overflow: hidden; c
 .mario_plays h4{margin:20px auto calc(50vw + 20px); width: 80%; height: 140px; background: url(../img/mario_plays.svg) no-repeat center; background-size: contain; position: relative; z-index: 100; left:10%; top:40px;}
 
 #play_view{width: 100%; height: calc(50vw + 20px); position: absolute; overflow: hidden; top: 160px;}
-#play_list{width: calc(((50% - 10px) * 8) + 150px); display: flex; gap:20px; transition: left linear 8s; position: absolute; left: 0; top: 0;}
+#play_list{width: calc(((50% - 10px) * 8) + 150px); display: flex; gap:20px; transition: left linear 32s; position: absolute; left: 0; top: 0;}
 #play_list li{width: calc(50% - 10px); font-size: 0;}
 #play_list li img{width: 100%;}
 

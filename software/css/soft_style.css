@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+html,body{width: 100%; height: 100%; font-family: 'Noto Sans KR', Arial, sans-serif; color:#222;}
+section{width: 100%; padding: 0 20px; box-sizing: border-box;}
+    
+/* heading */
+#heading{ margin-bottom: 20px; }
+#heading_wrap{display: flex; justify-content: center; padding: 10px;}
+#heading h1{height: 60px;  line-height: 60px; font-size: 1.6rem; font-weight: bold; color: #222;}
+#heading p{ position: fixed; width: 100%; height: 40px; line-height: 40px; bottom: 0; left: 0;}
+#heading p.on{display: block;}
+#heading p a{display: block; width: 100%; height: 100%; background: #fe7c0a; color:white; text-align: center; font-weight: 500;}
+
+/* best */
+#best{margin-bottom: 100px;}
+
+#slide-box{width: 100%;box-shadow: 3px 3px 7px rgba(0,0,0,0.2); margin-bottom: 40px;}
+#best-slide{width: 100%; height: calc(((100vw - 40px) * 0.825) + 80px); position: relative; }
+#best-slide li{opacity:0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; transition: opacity .5s;}
+#best-slide li a{display: block; width: 100%; font-size: 0;}
+#best-slide li a img{width: 100%;}
+.best_pc{display: none;}
+
+.best_info{width: 100%; height: 80px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap:10px;}
+.best_info h2{font-size: 1.2rem;color: #e60613; font-weight: 500;}
+.best_info p {font-size: 1rem; font-weight: 300;}
+
+#best-slide li.on{opacity: 1;}
+
+/* bullets */
+#bullets{width: 50%; display: flex; justify-content: space-between; margin: 0 auto;}
+#bullets li{width: 16px; height: 16px; border-radius: 50%; border: 1px solid #e60613; box-sizing: border-box; cursor: pointer;}
+#bullets li.on{background: #e60613;}
+
+
+/*soft list 공통 레이아웃*/
+#new, #sale{margin-bottom: 120px;}
+
+/* 리스트 상단 제목 */
+.soft_top{margin-bottom: 40px;}
+.soft_top h4{font-size:1.6rem; font-weight: 500;  margin-bottom: 20px; text-align: center;}
+.soft_top h4 span{display: block; width: 25%; height: 15px; background: #e60613; margin: 0 auto 30px; } 
+.soft_top a{display: none;}
+
+/* 리스트레이아웃 */
+.soft_list{width: 100%; display: flex; justify-content:space-between; flex-wrap:wrap; box-sizing:border-box; ;}
+.soft_list li{width: calc((100% - 20px) / 2); font-size:14px; line-height:18px; margin-bottom:30px; }
+.soft_list li img{width: 100%;}
+
+/* 리스트 텍스트부분 레이아웃 */
+.soft_info{display: block; font-size:14px; padding: 0 10px;}
+.soft_info h4{color:#e60613; line-height: 24px; font-weight: 500;}
+.soft_info p{color:rgb(15,15,15);}
+.soft_info p:first-child{height: 30px; line-height:30px; font-size: 12px; margin:10px 0 5px;}
+.soft_info p:first-child span{border-radius:5px; padding: 2px 5px; background: #e60613; color:white; margin-right:5px;}
+.soft_info p:first-child span.korean{background: white; color:#e60613; border:1px solid #e60613; box-sizing: border-box; font-weight:500;}
+.soft_info p:nth-child(3){ overflow:hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 5px;}
+.soft_info p:last-child{font-weight: 300; width:100%; color:#444;}
+
+/* 더보기 버튼 */
+.more{margin:60px auto 0; display:block; width:fit-content; height: 40px; padding:0 40px; line-height:40px; border: 1px solid #e60613;   border-radius: 50px; font-size: 1rem; cursor: pointer; transition: all .3s;}
+.more a{display: block; width: 100%; height: 100%; color: #e60613; text-align: center; transition: all .3s;}
+.more:hover{background: #e60613;}
+.more:hover a{color:white;}
+
+/*download*/
+.plus_list{ border:1px solid silver; margin-bottom: 50px;}
+.plus a{width: 100%; height: 80px; display: flex; align-items: center; border-bottom: 1px solid gray; box-sizing: border-box; padding:0 20px;}
+.plus_img{width: 60px; height: 60px; background: #efefef; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 20px;}
+.plus_img i{font-size: 1.6rem;}
+
+.plus_text{line-height: 20px; font-weight: 300; color:#222;}
+
+/* go_top banner*/
+#go_top{width: 100%; height: 50px; background:url("../../img/logo_nintendo_red.gif") no-repeat center #e60613; position: relative;}
+#go_top a{position:absolute; top:50%; right:20px; transform:translateY(-50%); display: flex; justify-content:flex-end; align-items:center; width: 25px; height: 25px; color:white; padding:0 4px; border:2px solid white; border-radius:17px; overflow: hidden; box-sizing: border-box; transition: width .2s;}
+#go_top a span{font-size:14px; font-weight: bold;}
+#go_top a:hover{width:70px; background: white; color:#e60613;}

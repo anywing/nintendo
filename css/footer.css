@@ -54,6 +54,8 @@
     .footer_nav>li>a{display:block; border:none; color: #e60613;}
     .footer_snb{width:100%; background:none; padding:0; padding-bottom:20px; font-weight: 300;}
     .footer_snb>li>a{color:gray; }
+
+    .footer_list{padding: 0 20px; box-sizing: border-box;}
 }
 
 @media screen and (min-width:1320px) {

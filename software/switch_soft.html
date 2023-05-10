@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./css/soft_style.css">
+    <link rel="stylesheet" href="./css/soft_style_pc.css">
     <link rel="icon" href="../favicon//favi.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <script src="https://kit.fontawesome.com/7aa93c4da2.js" crossorigin="anonymous"></script>
     <script src="../js/header.js" defer></script>
     <script src="../js/footer.js" defer></script>
+    <script src="./js/slide.js" defer></script>
 </head>
 
 <body>
@@ -54,7 +58,7 @@
                         </li>
                         <li><a href="#">캐릭터<i class="fa-regular fa-circle-down"></i></a>
                             <ul class="snb">
-                                <li><a href="#">마리오 포털</a></li>
+                                <li><a href="../character/mario/mario.html">마리오 포털</a></li>
                                 <li><a href="#">스플래툰 베이스 홈페이지</a></li>
                                 <li><a href="#">별의 커비 공식 홈페이지</a></li>
                             </ul>
@@ -63,7 +67,7 @@
                             <ul class="snb">
                                 <li><a href="../support/support.html">고객지원 한눈에 보기</a></li>
                                 <li><a href="../support/switch/switch.html">Nintendo Switch 고객지원 </a></li>
-                                <li><a href="#">Nintendo Switch Online 서포트</a></li>
+                                <li><a href="https://www.nintendo.co.kr/support/switch/nintendo_switch_online/">Nintendo Switch Online 서포트</a></li>
                                 <li><a href="https://www.nintendo.co.kr/3DS/customer/index.php">닌텐도 3DS 고객지원</a></li>
                                 <li><a href="https://support.nintendo.co.kr/index.do">고객지원 홈페이지</a></li>
                                 <li><a href="https://www.nintendo.co.jp/netinfo/ko_KR/index.html">네트워크 장애 발생 상황</a></li>
@@ -103,7 +107,7 @@
                         </li>
                         <li><a href="#">캐릭터</a>
                             <ul class="snb">
-                                <li><a href="#">마리오 포털</a></li>
+                                <li><a href="../character/mario/mario.html">마리오 포털</a></li>
                                 <li><a href="#">스플래툰 베이스 홈페이지</a></li>
                                 <li><a href="#">별의 커비 공식 홈페이지</a></li>
                             </ul>
@@ -111,7 +115,7 @@
                         <li><a href="../support/support.html">고객지원</a>
                             <ul class="snb">
                                 <li><a href="../support/switch/switch.html">Nintendo Switch 고객지원 </a></li>
-                                <li><a href="#">Nintendo Switch Online 서포트</a></li>
+                                <li><a href="https://www.nintendo.co.kr/support/switch/nintendo_switch_online/">Nintendo Switch Online 서포트</a></li>
                                 <li><a href="https://www.nintendo.co.kr/3DS/customer/index.php">닌텐도 3DS 고객지원</a></li>
                                 <li><a href="https://support.nintendo.co.kr/index.do">고객지원 홈페이지</a></li>
                                 <li><a href="https://www.nintendo.co.jp/netinfo/ko_KR/index.html">네트워크 장애 발생 상황</a></li>
@@ -134,76 +138,96 @@
     </header>
 
     <section id="heading">
-        <h1>Nintendo Switch 소프트웨어</h1>
-        <p>전체 소프트웨어 보기 <i class="fa-solid fa-arrow-right"></i></p>
+        <div id="heading_wrap">
+            <h1>Nintendo Switch 소프트웨어</h1>
+            <p><a href="#">전체 소프트웨어 보기&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a></p>
+        </div>
     </section>
 
     <section id="best">
         <div id="slide-box">
             <ul id="best-slide">
-                <li class="best1">
+                <li class="best1 on">
                     <a href="#">
-                        <span></span>
-                        <img src="./img/best1.jpg" alt="젤다의 전설 티어스 오브 킹덤 이미지">
-                        <p></p>
+                        <img class="best_pc" src="./img/best1.jpg" alt="젤다의 전설 티어스 오브 킹덤 이미지">
+                        <img class="best_m " src="./img/best_m1.jpg" alt="젤다의 전설 티어스 오브 킹덤 이미지">
+                        <div class="best_info">
+                            <h2>Best Software</h2>
+                            <p>젤다의 전설 티어스 오브 더 킹덤</p>
+                        </div>
                     </a>
                 </li>
                 <li class="best2">
                     <a href="#">
-                        <span></span>
-                        <img src="./img/best2.jpg" alt="스플래툰3 이미지">
-                        <p></p>
+                        <img class="best_pc" src="./img/best2.jpg" alt="스플래툰3 이미지">
+                        <img class="best_m" src="./img/best_m2.jpg" alt="스플래툰3 이미지">
+                        <div class="best_info">
+                            <h2>Best Software</h2>
+                            <p>스플래툰3</p>
+                        </div>
                     </a>
                 </li>
                 <li class="best3">
                     <a href="#">
-                        <span></span>
-                        <img src="./img/best3.jpg" alt="포켓몬스터 스칼렛과 포켓몬스터 바이올렛 이미지">
-                        <p></p>
+                        <img class="best_pc" src="./img/best3.jpg" alt="포켓몬스터 스칼렛과 포켓몬스터 바이올렛 이미지">
+                        <img class="best_m" src="./img/best_m3.jpg" alt="포켓몬스터 스칼렛과 포켓몬스터 바이올렛 이미지">
+                        <div class="best_info">
+                            <h2>Best Software</h2>
+                            <p>포켓몬스터 스칼렛 & 바이올렛</p>
+                        </div>
                     </a>
                 </li>
                 <li class="best4">
                     <a href="#">
-                        <span></span>
-                        <img src="./img/best4.jpg" alt="닌텐도 스포츠 이미지">
-                        <p></p>
+                        <img class="best_pc" src="./img/best4.jpg" alt="닌텐도 스포츠 이미지">
+                        <img class="best_m" src="./img/best_m4.jpg" alt="닌텐도 스포츠 이미지">
+                        <div class="best_info">
+                            <h2>Best Software</h2>
+                            <p>Nintendo Switch 스포츠</p>
+                        </div>
                     </a>
                 </li>
                 <li class="best5">
                     <a href="#">
-                        <span></span>
-                        <img src="./img/best5.jpg" alt="베요네타3 이미지">
-                        <p></p>
+                        <img class="best_pc" src="./img/best5.jpg" alt="베요네타 오리진이미지">
+                        <img class="best_m" src="./img/best_m5.jpg" alt="베요네타 오리진이미지">
+                        <div class="best_info">
+                            <h2>Best Software</h2>
+                            <p>베요네타 오리진 : 세레자와 길을 잃은 악마</p>
+                        </div>
                     </a>
                 </li>
                 <li class="best6">
                     <a href="#">
-                        <span></span>
-                        <img src="./img/best6.jpg" alt="커비의 드림뷔페 이미지">
-                        <p></p>
+                        <img class="best_pc" src="./img/best6.jpg" alt="별의 커비 Wii 디럭스 이미지">
+                        <img class="best_m" src="./img/best_m6.jpg" alt="별의 커비 Wii 디럭스 이미지">
+                        <div class="best_info">
+                            <h2>Best Software</h2>
+                            <p>별의 커비 Wii 디럭스</p>
+                        </div>
                     </a>
                 </li>
             </ul>
         </div>
-
+        
         <ul id="bullets">
-            <li class="bullet1"></li>
-            <li class="bullet2"></li>
-            <li class="bullet3"></li>
-            <li class="bullet4"></li>
-            <li class="bullet5"></li>
-            <li class="bullet6"></li>
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </section>
 
     <section id="new">
-        <div class="new_top">
+        <div class="soft_top">
             <h4><span></span>최신 소프트웨어 </h4><a href="./news/news.html"><i class="fa-solid fa-plus"></i></a>
         </div>
-        <ul class="new_list">
+        <ul class="soft_list">
             <li class="new_soft new1"><a href="#"><img src="./img/new1.jpg" alt=""></a>
                 <div class="soft_info">
-                    <p><span>PK</span><span>DL</span><span class="korean">한국어</span></p>
+                    <p><span>PK</span><span>DL</span><span class="pre">예약</span><span class="korean">한국어</span></p>
                     <h4>Nintendo Switch</h4>
                     <p>젤다의 전설 티어스 오브 더 킹덤</p>
                     <p class="date">2023.05.12</p>
@@ -250,71 +274,71 @@
                 </div>
             </li>
         </ul>
-        <button id="plus">더보기 +</button>
+        <p class="more"><a href="#">더 많은 소프트웨어 보기 +</a></p>
     </section>
 
     <section id="sale">
-        <div class="sale_top">
+        <div class="soft_top">
             <h4><span></span>할인중인 다운로드 소프트웨어 </h4><a href="./news/news.html"><i class="fa-solid fa-plus"></i></a>
         </div>
-        <ul class="sale_list">
-            <li class="sale_soft sale1"><a href="#"><img src="./img/software1.jpg" alt=""></a>
+        <ul class="soft_list">
+            <li class="sale_soft sale1"><a href="#"><img src="./img/sale1.jpg" alt=""></a>
                 <div class="soft_info">
-                    <p><span>PK</span><span>DL</span><span>체험판</span><span class="korean">한국어</span><span class="pre">예약</span></p>
+                    <p><span>DL</span><span class="pre">예약</span><span class="korean">한국어</span></p>
                     <h4>Nintendo Switch</h4>
                     <p>OXENFREE II: Lost Signals</p>
                     <p class="date">2023.07.13</p>
                 </div>
             </li>
-            <li class="sale_soft sale1"><a href="#"><img src="./img/software1.jpg" alt=""></a>
+            <li class="sale_soft sale1"><a href="#"><img src="./img/sale2.jpg" alt=""></a>
                 <div class="soft_info">
-                    <p><span>PK</span><span>DL</span><span>체험판</span><span class="korean">한국어</span><span class="pre">예약</span></p>
+                    <p><span>PK</span><span>DL</span><span>체험판</span><span class="pre">예약</span><span class="korean">한국어</span></p>
                     <h4>Nintendo Switch</h4>
                     <p>피트니스 러너</p>
                     <p class="date">2023.05.26</p>
                 </div>
             </li>
-            <li class="sale_soft sale1"><a href="#"><img src="./img/software1.jpg" alt=""></a>
+            <li class="sale_soft sale1"><a href="#"><img src="./img/sale3.jpg" alt=""></a>
                 <div class="soft_info">
-                    <p><span>PK</span><span>DL</span><span>체험판</span><span class="korean">한국어</span><span class="pre">예약</span></p>
+                    <p><span>PK</span><span>DL</span><span class="pre">예약</span><span class="korean">한국어</span></p>
                     <h4>Nintendo Switch</h4>
                     <p>이스 메모와르 -펠가나의 맹세-</p>
                     <p class="date">2023.05.25</p>
                 </div>
             </li>
-            <li class="sale_soft sale1"><a href="#"><img src="./img/software1.jpg" alt=""></a>
+            <li class="sale_soft sale1"><a href="#"><img src="./img/sale4.jpg" alt=""></a>
                 <div class="soft_info">
-                    <p><span>PK</span><span>DL</span><span>체험판</span><span class="pre">예약</span></p>
+                    <p><span>DL</span><span class="pre">예약</span><span class="korean">한국어</span></p>
                     <h4>Nintendo Switch</h4>
-                    <p>Swordbreaker: Origins</p>
+                    <p>Fallen Knight</p>
                     <p class="date">2023.05.11</p>
                 </div>
             </li>
-            <li class="sale_soft sale1"><a href="#"><img src="./img/software1.jpg" alt=""></a>
+            <li class="sale_soft sale1"><a href="#"><img src="./img/sale5.jpg" alt=""></a>
                 <div class="soft_info">
-                    <p><span>PK</span><span>DL</span><span>체험판</span><span class="pre">예약</span></p>
+                    <p><span>DL</span></p>
                     <h4>Nintendo Switch</h4>
-                    <p>Weeping Willow</p>
-                    <p class="date">2023.05.11</p>
+                    <p>슈퍼 알로이 레인저</p>
+                    <p class="date">2023.04.28</p>
                 </div>
             </li>
-            <li class="sale_soft sale1"><a href="#"><img src="./img/software1.jpg" alt=""></a>
+            <li class="sale_soft sale1"><a href="#"><img src="./img/sale6.jpg" alt=""></a>
                 <div class="soft_info">
-                    <p><span>PK</span><span>DL</span><span>체험판</span><span class="pre">예약</span></p>
+                    <p><span>DL</span><span class="korean">한국어</span></p>
                     <h4>Nintendo Switch</h4>
-                    <p>Pixel Driver</p>
-                    <p class="date">2023.05.11</p>
+                    <p>컬러 브레이커</p>
+                    <p class="date">2023.04.28</p>
                 </div>
             </li>
         </ul>
-        <button id="plus">더보기 +</button>
+        <p class="more"><a href="#">더 많은 소프트웨어 보기 +</a></p>
     </section>
 
     <section id="plus_menu">
         <ul class="plus_list">
             <li class="plus plus1">
                 <a href="#">
-                    <div class="plus_img"></div>
+                    <div class="plus_img"><i class="bi bi-bag"></i></div>
                     <div class="plus_text">
                         <p>Nintendo e-shop 바로가기 <i class="fa-solid fa-angle-right"></i></p>
                     </div>
@@ -322,7 +346,7 @@
             </li>
             <li class="plus plus2">
                 <a href="#">
-                    <div class="plus_img"></div>
+                    <div class="plus_img"><i class="bi bi-nintendo-switch"></i></div>
                     <div class="plus_text">
                         <p>Nintendo Switch Online <i class="fa-solid fa-angle-right"></i></p>
                     </div>
@@ -330,7 +354,7 @@
             </li>
             <li class="plus plus3">
                 <a href="#">
-                    <div class="plus_img"></div>
+                    <div class="plus_img"><i class="bi bi-alarm"></i></div>
                     <div class="plus_text">
                         <p>발매 예정 소프트웨어 <i class="fa-solid fa-angle-right"></i></p>
                     </div>

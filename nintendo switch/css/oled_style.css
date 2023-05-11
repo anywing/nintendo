@@ -3,6 +3,8 @@ html,body{width: 100%; height: 100%; font-family: 'Noto Sans KR', Arial, sans-se
 section{width: 100%;}
 .wrap{width: 100%; padding: 0 20px;  box-sizing: border-box;}
 
+
+
 /* top */
 #top{background: #e60613; overflow: hidden; padding-bottom: 40px;}
 
@@ -16,17 +18,68 @@ section{width: 100%;}
 #top_right{color:white;}
 #top_right h2{padding-bottom: 20px; border-bottom: 1px solid white; font-size: 2.4rem; word-break: keep-all; line-height: 3rem; margin-bottom: 20px; font-weight: 500; letter-spacing: 3px;}
 #top_right h4{font-weight: 300; margin-bottom: 20px;}
-#top_right h4 span{font-size: 1.6rem; letter-spacing: 3px; font-weight: 400;}
+#top_right h4 span{font-size: 1.6rem; letter-spacing: 3px; font-weight: 400; color:white;}
 
 #top_info{display: flex; gap:20px; align-items: center; margin-bottom: 20px;}
 #top_info > p:first-child{background: white; padding:5px 10px; color:#e60613;}
 #top_info > p:first-child span{font-size: 1.4rem; font-weight: 500;}
 #top_info > p:last-child{font-weight: 300;}
-#top_info > p:last-child span{font-size: 1.3rem; font-weight: 400;}
+#top_info > p:last-child span{font-size: 1.2rem; font-weight: 400;}
 
-#top_right > p:last-child{font-weight: 300; padding: 20px 0; background: rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-evenly; vertical-align: baseline;}
-#top_right > p:last-child span{font-size: 0.8rem; letter-spacing: 3px; font-weight: 500;}
-#top_right > p:last-child i{font-size: 0.8rem;}
+#top_right > p:last-child a{color:#eeee; display:block; width: 100%; height: 100%; font-weight: 300; padding: 20px 0; background: rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-evenly; vertical-align: baseline; color:white;} 
+#top_right > p:last-child a span{font-size: 0.8rem; letter-spacing: 3px; font-weight: 500;}
+#top_right > p:last-child a i{font-size: 0.8rem;}
+
+/* top */
+#new{background: #111; color:#efefef; position: relative;}
+
+#new_bg>div{position: absolute;  word-break: keep-all; z-index: 2;} 
+
+#new_bg>.wrap{width: 70%; top: 35%; font-size: 1.1rem; line-height: 2rem; transform: translateY(-50%); font-weight: 300;} 
+
+#new_bg_text{width: 60%;top: 55%; background: rgba(255,255,255,0.1); transform: translateY(-50%); }
+#new_bg_text a{display: block; width: 100%; height: 100%; padding: 20px; display: flex; gap: 20px; align-items: center; color: #eee; font-size: 2rem;}
+#new_bg_text a div p:first-child{color: #e60613; font-size: 0.9rem; margin-bottom: 10px; }
+#new_bg_text a i{font-size: 2.4rem;}
+
+#vid{width: 100%; height: 100vh; position: relative; }
+#vid video{display: block; width: 100%; height: 100%; object-fit: cover;}
+
+/* vivid */
+#display{background: #111; color:#efefef; position: relative; padding-top:80px; box-sizing: border-box; overflow: hidden; }
+#display h4 {display: flex; flex-direction: column; align-items: flex-start;  font-size: 2.4rem;}
+#display h4 span{color: #e60613; font-size: 0.7rem; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #e60613; letter-spacing:3px;}
+
+#color{margin-bottom: 160px;}
+
+#color p{width: 100%; position: relative; left:-100px;}
+#color p img{width: 200%; max-width: 920px; position:relative; z-index: 2;}
+#color video{width: 120%; max-width:600px; position: absolute; top: 330px; left: 330px; transform-origin: left bottom; transform-style: preserve-3d; transform: translateX(-50%) skew(-9deg, -13deg);}
+
+
+#big_screen h4 #slim{color: #efefef; font-size: 1.2rem; border: none; padding: 0; font-weight: 300;}
+
+#big_screen #screen{width: 100%;  height:100%; margin-top:120px; position: relative; margin-bottom: 60px;}
+#big_screen video{display: block; width: 64%; z-index: 2; position: absolute; top: calc(100vw * (34 / 1030)); left:50%; transform: translateX(-50%);}
+#big_screen #screen img{width: 100%;}
+
+#big_screen>p{font-weight: 300; margin-bottom: 16px; color:#eee; font-size: 0.9rem;}
+
+
+#compare{margin-top: 60px;}
+#compare>p{display: flex; flex-direction: row-reverse; justify-content: space-between; gap:5%; margin-bottom: 40px;}
+#compare>p span{font-size: 1rem; word-break: keep-all; font-weight: 100; letter-spacing: 5px; line-height: 24px;}
+#compare>p img{width: 50%; }
+
+#compare button{display: block; font-size: 0.9rem; font-weight: 300; padding:10px 15px; margin: 80px auto 0; background: none; border: 1px solid #e60613; color:#e60613; cursor: pointer;}
+#compare div{display: none;}
+
+.sect-end{width: 100%; margin-top: 160px; font-size: 0;}
+.sect-end img{width: 100%;}
+/* stand */
+#stand_img img{display: none;}
+#stand_img img.on{display: block;}
+
 /* go_top banner*/
 #go_top{width: 100%; height: 50px; background:url("../../img/logo_nintendo_red.gif") no-repeat center #e60613; position: relative;}
 #go_top a{position:absolute; top:50%; right:20px; transform:translateY(-50%); display: flex; justify-content:flex-end; align-items:center; width: 25px; height: 25px; color:white; padding:0 4px; border:2px solid white; border-radius:17px; overflow: hidden; box-sizing: border-box; transition: width .2s;}

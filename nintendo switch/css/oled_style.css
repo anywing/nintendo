@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+html,body{width: 100%; height: 100%; font-family: 'Noto Sans KR', Arial, sans-serif; color:#222;}
+section{width: 100%;}
+.wrap{width: 100%; padding: 0 20px;  box-sizing: border-box;}
+
+/* top */
+#top{background: #e60613; overflow: hidden; padding-bottom: 40px;}
+
+#top_left{width: 100%; position: relative; margin-bottom: 60px;}
+#top_left img{width: 100%;}
+#top_left p:first-child{position: absolute; bottom: 0; z-index: 2;}
+
+.hand{display: none; position: relative; top: -100px;}
+.hand.on{display: block;}
+
+#top_right{color:white;}
+#top_right h2{padding-bottom: 20px; border-bottom: 1px solid white; font-size: 2.4rem; word-break: keep-all; line-height: 3rem; margin-bottom: 20px; font-weight: 500; letter-spacing: 3px;}
+#top_right h4{font-weight: 300; margin-bottom: 20px;}
+#top_right h4 span{font-size: 1.6rem; letter-spacing: 3px; font-weight: 400;}
+
+#top_info{display: flex; gap:20px; align-items: center; margin-bottom: 20px;}
+#top_info > p:first-child{background: white; padding:5px 10px; color:#e60613;}
+#top_info > p:first-child span{font-size: 1.4rem; font-weight: 500;}
+#top_info > p:last-child{font-weight: 300;}
+#top_info > p:last-child span{font-size: 1.3rem; font-weight: 400;}
+
+#top_right > p:last-child{font-weight: 300; padding: 20px 0; background: rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-evenly; vertical-align: baseline;}
+#top_right > p:last-child span{font-size: 0.8rem; letter-spacing: 3px; font-weight: 500;}
+#top_right > p:last-child i{font-size: 0.8rem;}
+/* go_top banner*/
+#go_top{width: 100%; height: 50px; background:url("../../img/logo_nintendo_red.gif") no-repeat center #e60613; position: relative;}
+#go_top a{position:absolute; top:50%; right:20px; transform:translateY(-50%); display: flex; justify-content:flex-end; align-items:center; width: 25px; height: 25px; color:white; padding:0 4px; border:2px solid white; border-radius:17px; overflow: hidden; box-sizing: border-box; transition: width .2s;}
+#go_top a span{font-size:14px; font-weight: bold;}
+#go_top a:hover{width:70px; background: white; color:#e60613;}

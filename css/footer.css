@@ -26,7 +26,7 @@
 .footer_snb{width:100%; background:rgb(246,246,246); line-height:30px; font-weight: 300; padding:20px 10px;}
 .footer_snb a:hover{text-decoration: underline;}
 
-.footer{padding:40px; background: rgb(246,246,246);}
+.footer{padding:20px; background: rgb(246,246,246);}
 .footer_text{margin-bottom:20px;}
 .footer_text p{color:gray; font-size:14px; line-height:16px; word-break: keep-all;}
 .footer_text p span{color: #e60613;}

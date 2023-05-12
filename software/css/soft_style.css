@@ -5,7 +5,7 @@ section{width: 100%; padding: 0 20px; box-sizing: border-box;}
 /* heading */
 #heading{ margin-bottom: 20px; }
 #heading_wrap{display: flex; justify-content: center; padding: 10px;}
-#heading h1{height: 60px;  line-height: 60px; font-size: 1.6rem; font-weight: bold; color: #222;}
+#heading h1{height: 60px;  line-height: 60px; font-size: 1.4rem; font-weight: bold; color: #222;}
 #heading p{ position: fixed; width: 100%; height: 40px; line-height: 40px; bottom: 0; left: 0;}
 #heading p.on{display: block;}
 #heading p a{display: block; width: 100%; height: 100%; background: #fe7c0a; color:white; text-align: center; font-weight: 500;}
@@ -27,7 +27,7 @@ section{width: 100%; padding: 0 20px; box-sizing: border-box;}
 #best-slide li.on{opacity: 1;}
 
 /* bullets */
-#bullets{width: 50%; display: flex; justify-content: space-between; margin: 0 auto;}
+#bullets{width: 40%; display: flex; justify-content: space-between; margin: 0 auto;}
 #bullets li{width: 16px; height: 16px; border-radius: 50%; border: 1px solid #e60613; box-sizing: border-box; cursor: pointer;}
 #bullets li.on{background: #e60613;}
 
@@ -37,7 +37,7 @@ section{width: 100%; padding: 0 20px; box-sizing: border-box;}
 
 /* 리스트 상단 제목 */
 .soft_top{margin-bottom: 40px;}
-.soft_top h4{font-size:1.6rem; font-weight: 500;  margin-bottom: 20px; text-align: center;}
+.soft_top h4{font-size:1.4rem; font-weight: 500;  margin-bottom: 20px; text-align: center;}
 .soft_top h4 span{display: block; width: 25%; height: 15px; background: #e60613; margin: 0 auto 30px; } 
 .soft_top a{display: none;}
 
@@ -50,7 +50,8 @@ section{width: 100%; padding: 0 20px; box-sizing: border-box;}
 .soft_info{display: block; font-size:14px; padding: 0 10px;}
 .soft_info h4{color:#e60613; line-height: 24px; font-weight: 500;}
 .soft_info p{color:rgb(15,15,15);}
-.soft_info p:first-child{height: 30px; line-height:30px; font-size: 12px; margin:10px 0 5px;}
+.soft_info p:first-child{height: 30px; line-height:30px; font-size: 12px; margin:10px 0 5px; white-space:nowrap; overflow-x: auto;}
+.soft_info p:first-child::-webkit-scrollbar{display: none;}
 .soft_info p:first-child span{border-radius:5px; padding: 2px 5px; background: #e60613; color:white; margin-right:5px;}
 .soft_info p:first-child span.korean{background: white; color:#e60613; border:1px solid #e60613; box-sizing: border-box; font-weight:500;}
 .soft_info p:nth-child(3){ overflow:hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 5px;}
@@ -64,8 +65,8 @@ section{width: 100%; padding: 0 20px; box-sizing: border-box;}
 
 /*download*/
 .plus_list{ border:1px solid silver; margin-bottom: 50px;}
-.plus a{width: 100%; height: 80px; display: flex; align-items: center; border-bottom: 1px solid gray; box-sizing: border-box; padding:0 20px;}
-.plus_img{width: 60px; height: 60px; background: #efefef; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 20px;}
+.plus a{width: 100%; height: 80px; display: flex; align-items: center; border-bottom: 1px solid gray; box-sizing: border-box; padding:0 20px; word-break: keep-all;}
+.plus_img{width: 60px; height: 60px; background: #efefef; border-radius: 50%; flex-shrink: 0;  display: flex; justify-content: center; align-items: center; margin-right: 20px;}
 .plus_img i{font-size: 1.6rem;}
 
 .plus_text{line-height: 20px; font-weight: 300; color:#222;}
@@ -75,3 +76,27 @@ section{width: 100%; padding: 0 20px; box-sizing: border-box;}
 #go_top a{position:absolute; top:50%; right:20px; transform:translateY(-50%); display: flex; justify-content:flex-end; align-items:center; width: 25px; height: 25px; color:white; padding:0 4px; border:2px solid white; border-radius:17px; overflow: hidden; box-sizing: border-box; transition: width .2s;}
 #go_top a span{font-size:14px; font-weight: bold;}
 #go_top a:hover{width:70px; background: white; color:#e60613;}
+
+@media screen and (max-width:350px) {
+    body{font-size: 14px;}
+
+    #heading{ margin-bottom: 10px; }
+    #heading h1, .soft_top h4{font-size: 1rem;}
+
+    #best{margin-bottom: 80px;}
+    .best_info h2{font-size: 1rem;}
+    .best_info p {font-size: 0.8rem;}
+
+    #bullets{width: 60%;}
+    #bullets li{width: 13px; height: 13px;}
+
+    #new, #sale{margin-bottom: 80px;}
+
+    .soft_list li{width: 100%;}
+
+    .more{font-size: 0.8rem; padding: 0 20px; margin-top:20px;}
+
+    .plus a{ padding:0 14px;}
+    .plus_img{width: 50px; height: 50px; margin-right: 14px;}
+    .plus_img i{font-size: 1.3rem;}
+}

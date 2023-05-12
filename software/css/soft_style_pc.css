@@ -22,7 +22,11 @@
 
     #best{margin-bottom: 130px;}
 
+    #bullets{width: 15%;}
+
     #plus_menu{margin-bottom: 120px;}
+
+    #go_top a{right:calc(((100vw - 960px) / 2) + 20px);}
 }
 
 @media screen and (min-width:1320px) {
@@ -36,4 +40,6 @@
     .plus_list{display: flex; justify-content: space-between;}
     .plus{border-right:1px solid silver; width:calc(1280px /3);}
     .plus:last-child{border-right:block;}
+
+    #go_top a{right:calc(((100vw - 1280px) / 2) + 20px);}
 }

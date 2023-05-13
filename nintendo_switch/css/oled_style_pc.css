@@ -60,7 +60,12 @@
     #memory p span{font-size: 0.9rem; }
 
     #speaker p{font-size: 1rem;}
+    #speaker{margin-bottom: 450px;}
 
+    #gallery{transform: translateY(-360px);}
+    #gallery h4 {font-size: 2.8rem;} 
+    #gallery h4 span {font-size: 1rem;}
+    
     /* mode */
     #mode h4{font-size: 1rem;}
 
@@ -130,21 +135,115 @@
 @media screen and (min-width:1024px) {
     .wrap{width: 960px; margin: 0 auto;}
     
+    /* top */
+    #top .wrap{display: flex; align-items: center;}
+    #top_right h2 {line-height: 4rem;}
+    #top_info {flex-direction: column; align-items: flex-start;}
+
+    /* new */
+    #new{height: auto; position:relative;}
+    #new_bg { width: 100%; height: 100%; position: static;}
     
-    #go_top a{right:calc(((100vw - 960px) / 2) + 20px);}
-    
+    #new_bg>.wrap{width: 960px; height: 100vh; display: flex; flex-direction: column; justify-content:center; align-items:flex-end;}
+    #new_bg .wrap p{width: 433px; line-height: 2.4rem;}
+
+    #new_bg_text { width: 40%; position: absolute; top: 125vh; left: 0; transform: translateY(-50%);}
+    #new_bg_text a {justify-content: flex-end;}
+
+    #vid { width: 100%; height: 50vh; position: static; } 
+
+    /* vivid */
+    #color p {text-align: center;} 
+    #color video {top: 340px; left: calc(50% - 100px);}
+
+    #model_type{width: 60%;}
+
+    #big_screen video {top: calc(960px * (34 / 1030));}
+
+    .sect-end {width: 960px; height: 30vh; margin: 180px auto 0;}
+
+    /* stand */
+    #stand{padding-top: 160px;}
+
+    #adjustable{position: relative;}
+    #adjustable h4{position: absolute; top: 0; left: 0;}
+
+    #stand_img img {transform: scale(1.3);} 
+
+    #stand-info{margin-top: 130px;  display: flex; align-items: end; gap:5%;}
+    #stand-info>p{width: 50%; transform: none; margin: 0;}
+    #stand-info>p span{width: 50%;}
+
+    #stand-right .heading{position: static; margin-bottom: 40px;}
+    #stand-right>p {text-align: left;}
+
+    /* others */
+    #others{padding-top:160px; }
+    #others .wrap{position: relative;}
+
+    #others h4{margin-bottom: 120px;}
+
+    #others_right{width: 50%;height: 400px; position: absolute; margin:0; top: 0;right: 0;}
+   
+    #others_left>div{width: 50%; height: 50vh;}
+    #others .heading{margin: 40px 0 20px;}
+    #others_left p{text-align: left; margin: 0;}
+
+    #memory p:first-child{display: none;}
+
     /* gallery */
-    #photos::-webkit-scrollbar { background: rgba(0,0,0,0.0);} 
-    #photos::-webkit-scrollbar-thumb { background: #e60613;} 
+    #gallery{padding-left: calc(50vw - (960px / 2)); }
+
+    #photos li{width: 50%}
+
+    #photos::-webkit-scrollbar {display: block; background: rgba(0,0,0,0.0);} 
+    #photos::-webkit-scrollbar-thumb { background: #e60613; border-radius: 15px;} 
     #photos::-webkit-scrollbar-track{display: none;}
+
+    /* mode */
+    #mode .wrap{position: relative;}
+    #mode h4{width: max-content; writing-mode: horizontal-tb; font-size: 1.4rem; border:none; border-bottom: 5px solid #e60613; padding:0 0 10px 0; left:auto; right:20px; top: 0;}
     
+    #mode_top{display: flex; align-items: end; gap:5%;}
+    #mode_top>p{position: static; left: 0; width: 50%;}
+    #mode_top>p span{width: 50%;}
+    #mode_top img{width: 100%; transform: none;}
+
+    #mode_top_right{text-align: left; margin-bottom: 60px;}
+
+    /* joycon */
+    #joycon{text-align: left; height:calc((960px * 0.85) * (818 / 1135));}
+    #joycon_top{position: relative;}
+    #joycon_top_left{width: 50%;}
+    #joycon_top_left p{width: 100%;}
+    
+    #joycon_top>p:last-child{width: 85%; position: absolute; z-index: 5; right: 0; top: 0; transform: translate(50%, 0);}
+
+    #multi{position: relative; top: -100px; margin: 0; }
     /*detail*/
     #detail{width: 960px; margin: 60px auto 0;}
     #detail p{text-align: center;}
+    
+    /* go_top */
+    #go_top a{right:calc(((100vw - 960px) / 2) + 20px);}
 }
 
 @media screen and (min-width:1320px) {
     .wrap, #detail{width: 1280px;}
-
+    #new_bg>.wrap{width: 1280px;} 
+    
+    #model_type{width: 50%;}
+    
+    #big_screen video {top: calc(1280px * (34 / 1030));}
+    
+    .sect-end {width: 1280px; }
+    
+    #gallery{padding-left: calc(50vw - (1280px / 2)); }
+    
+    #photos li{width: 40%}
+    
+    #joycon{text-align: left; height:calc((1280px * 0.85) * (818 / 1135));}
+    #multi{position: relative; top: -200px;}
+    /* go_top */
     #go_top a{right:calc(((100vw - 1280px) / 2) + 20px);}
 }

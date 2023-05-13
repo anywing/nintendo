@@ -136,7 +136,7 @@
         </div>
     </header>
 
-    <section id="top">
+    <main id="top">
         <div class="wrap">
             <div id="top_left">
                 <p><img src="./img/top_img.png" alt="닌텐도 스위치 올레드의 독과 조이콘의 모습"></p>
@@ -154,7 +154,7 @@
                 </p>
             </div>
         </div>
-    </section>
+    </main>
 
 
     <section id="new">
@@ -174,7 +174,7 @@
             </div>
         </div>
         <figure id="vid">
-            <video autoplay loop muted>
+            <video autoplay loop muted playsinline>
                 <source src="./img/new_bg_movie.mp4" type="video/mp4">
             </video>
         </figure>
@@ -187,7 +187,7 @@
                 <img src="./img/pic_vivid.png" alt="닌텐도 스위치 OLED의 모습">
             </p>
             <figure>
-                <video loop autoplay muted>
+                <video loop autoplay muted playsinline>
                     <source src="./img/pic_vivid_video.mp4" type="video/mp4">
                 </video>
             </figure>
@@ -199,7 +199,7 @@
             </h4>
             <div id="screen">
                 <figure>
-                    <video loop autoplay muted>
+                    <video loop autoplay muted playsinline>
                         <source src="./img/pic_bigscreen_video.mp4" type="video/mp4">
                     </video>
                 </figure>
@@ -210,10 +210,13 @@
             <p>다양한 게임 속 세계를 선명한 색감으로 그려냅니다.</p>
 
             <div id="compare">
-                <p><img src="./img/bigscreen_compare1.png" alt="닌텐도 스위치 OLED 모델의 화면 모습"><span>Nintendo Switch
-                        (OLED모델)</span></p>
-                <p><img src="./img/bigscreen_compare2.png" alt="닌텐도 스위치 일반 모델의 화면 모습"><span>Nintendo Switch</span></p>
-                <button><i class="bi bi-question-circle-fill"></i>&nbsp;&nbsp;「OLED 디스플레이」란</button>
+                <div id="model_type">
+                    <p><img src="./img/bigscreen_compare1.png" alt="닌텐도 스위치 OLED 모델의 화면 모습"><span>Nintendo Switch
+                            (OLED모델)</span></p>
+                    <p><img src="./img/bigscreen_compare2.png" alt="닌텐도 스위치 일반 모델의 화면 모습"><span>Nintendo Switch</span>
+                    </p>
+                </div>
+                <button type="button"><i class="bi bi-question-circle-fill"></i>&nbsp;&nbsp;「OLED 디스플레이」란</button>
                 <div>픽셀 하나하나의 유기 EL 소자가 스스로 발광하면서 화면을 표시하는 디스플레이로,<p></p>픽셀의 발광을 끄는 것으로 깊은 검은색을 표현할 수 있는 것이 특징입니다.</div>
             </div>
         </div>
@@ -493,23 +496,29 @@
 
             <ul id="edition">
                 <li><a href="#">
-                    <picture>
-                        <source media="(max-width: 740px)" srcset="./img/oled-custom-banner-totk--m.jpg" alt="">
-                        <img src="./img/oled-custom-banner-totk--tab.jpg"
-                            alt="닌텐도 스위치 OLED 젤다의 전설 티어스 오브 더 킹덤 에디션의 발매 홍보 이미지">
-                    </picture></a></li>
+                        <picture>
+                            <source media="(max-width: 740px)" srcset="./img/oled-custom-banner-totk--m.jpg"
+                                alt="닌텐도 스위치 OLED 젤다의 전설 티어스 오브 더 킹덤 에디션의 발매 홍보 이미지">
+                            <img src="./img/oled-custom-banner-totk--tab.jpg"
+                                alt="닌텐도 스위치 OLED 젤다의 전설 티어스 오브 더 킹덤 에디션의 발매 홍보 이미지">
+                        </picture>
+                    </a></li>
                 <li><a href="#">
-                    <picture>
-                        <source media="(max-width: 740px)" srcset="./img/oled-custom-banner-splatoon3--m.png">
-                        <img src="./img/oled-custom-banner-splatoon3--tab.png"
-                                alt="닌텐도 스위치 OLED 스플래툰3 에디션의 발매 홍보 이미지"></a></li>
-                    </picture>
+                        <picture>
+                            <source media="(max-width: 740px)" srcset="./img/oled-custom-banner-splatoon3--m.png"
+                                alt="닌텐도 스위치 OLED 스플래툰3 에디션의 발매 홍보 이미지">
+                            <img src="./img/oled-custom-banner-splatoon3--tab.png"
+                                alt="닌텐도 스위치 OLED 스플래툰3 에디션의 발매 홍보 이미지">
+                        </picture>
+                    </a></li>
                 <li><a href="#">
-                    <picture>
-                        <source media="(max-width: 740px)" srcset="./img/oled-custom-banner-pokemon--m.jpg">
-                        <img src="./img/oled-custom-banner-pokemon--tab.jpg"
-                                alt="닌텐도 스위치 OLED 포켓몬스터 스칼렛·바이올렛 에디션의 발매 홍보 이미지"></a></li>
-                    </picture>
+                        <picture>
+                            <source media="(max-width: 740px)" srcset="./img/oled-custom-banner-pokemon--m.jpg"
+                                alt="닌텐도 스위치 OLED 포켓몬스터 스칼렛·바이올렛 에디션의 발매 홍보 이미지">
+                            <img src="./img/oled-custom-banner-pokemon--tab.jpg"
+                                alt="닌텐도 스위치 OLED 포켓몬스터 스칼렛·바이올렛 에디션의 발매 홍보 이미지">
+                        </picture>
+                    </a></li>
             </ul>
         </div>
     </section>

@@ -118,12 +118,11 @@ addEventListener('resize', () => {
 })
 
 addEventListener('scroll', () => {
-    newScroll();
+    scrennScroll();
     standScroll();
     if (viewWidth >= 1024) {
-        console.log();
         topScroll();
-        scrennScroll();
+        newScroll();
         othersScroll();
     }
 })

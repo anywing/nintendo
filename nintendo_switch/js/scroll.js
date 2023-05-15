@@ -66,18 +66,19 @@ let nowScroll = scrollY;
 function standScroll() {
     if (scrollY > standSect.offsetTop && scrollY < standInfo.offsetTop) {
         const newScroll = scrollY;
+        let interval = innerHeight / 60;
         if (count <= 59) {
             standImg.forEach(img => {
                 img.classList.remove('on');
             })
 
-            if (nowScroll < newScroll ) {
+            if (nowScroll < newScroll  && scrollY > (standSect.offsetTop + (interval * count))) {
                 if(count >= 59){
                     count = 58;
                 }
                 count++;
             } 
-            else{
+            else if(scrollY < (standSect.offsetTop + (interval * count))){
                 count--;
                 if(count <= 0) {
                     count = 0;
@@ -117,12 +118,12 @@ addEventListener('resize', () => {
 })
 
 addEventListener('scroll', () => {
+    newScroll();
+    standScroll();
     if (viewWidth >= 1024) {
         console.log();
         topScroll();
-        newScroll();
         scrennScroll();
-        standScroll();
         othersScroll();
     }
 })

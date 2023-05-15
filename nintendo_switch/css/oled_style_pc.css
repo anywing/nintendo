@@ -162,9 +162,6 @@
 
     #big_screen video {top: calc(960px * (34 / 1030));}
 
-    #big_screen video.off {transform:translateX(-50%) scale(0.8);}
-    #big_screen #screen img.off{opacity: 0;}
-
     .sect-end {width: 960px; height: 30vh; margin: 180px auto 0;}
 
 

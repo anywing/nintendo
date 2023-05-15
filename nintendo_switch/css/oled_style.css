@@ -62,6 +62,9 @@ section,main { width: 100%; overflow: hidden;}
 #big_screen video { display: block; width: 64%; z-index: 2; position: absolute; top: calc(100vw * (34 / 1030)); left:50%; transform: translateX(-50%); transition: all 1s;} 
 #big_screen #screen img { width: 100%; transition: all .5s;} 
 
+#big_screen video.off {transform:translateX(-50%) scale(0.8);}
+#big_screen #screen img.off{opacity: 0;}
+
 #big_screen>p { font-weight: 300; margin-bottom: 1rem; color:#eee; font-size: 0.9rem; text-align: center; word-break: keep-all; } 
 
 #compare { margin-top: 60px; } 

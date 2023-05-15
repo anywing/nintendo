@@ -1,5 +1,5 @@
 /* header_mobile */
-header{width: 100%; height: 60px; background:#e60613;}
+header{width: 100%; height: 60px; background:#e60613; z-index: 5000; position: relative;}
 .header_wrap{position:sticky; top:0; display: flex; justify-content: space-between; align-items: center; position:relative;}
 .logo{width:130px; text-align: center;}
 .logo img{width:75%;}

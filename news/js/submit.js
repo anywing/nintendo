@@ -37,7 +37,7 @@ function listSearch(value) {
      newsList.forEach((li) => {
         const newsIndex = listArr.indexOf(li);
 
-        if(li.style.display !== "none"){
+        if(!li.classList.contains("off")){
             const listText = listHead[newsIndex].textContent;
 
             if(listText.includes(value)){

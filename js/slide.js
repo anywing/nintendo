@@ -74,25 +74,45 @@ function slideRight() {
 }
 
 let slideEvent;
+let touchX;
 
-function SlideOn() {
+function slideOn() {
     slideEvent = setInterval(slideRight, 4000);
 }
 
-function SlideOff() {
+function slideOff() {
     clearInterval(slideEvent);
 }
 
 lbt.addEventListener('click', ()=>{
-    SlideOff();
+    slideOff();
     slideLeft();
-    SlideOn();
+    slideOn();
 });
 
 rbt.addEventListener('click', ()=>{
-    SlideOff();
+    slideOff();
     slideRight();
-    SlideOn();
+    slideOn();
 });
 
-addEventListener('load',SlideOn);
+slideBox.addEventListener('touchstart', (e)=>{
+    slideOff();
+    touchX = e.touches[0].pageX;
+})
+
+slideBox.addEventListener('touchend', (e)=>{
+    touchX -= e.changedTouches[0].pageX;
+
+    console.log(touchX);
+    if(touchX > 0){
+        slideRight();
+    }
+    else if(touchX < 0){
+        slideLeft();
+    }
+    
+    slideOn();
+})
+
+addEventListener('load',slideOn);
